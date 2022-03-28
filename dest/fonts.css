@@ -1,1 +1,17 @@
 /* FONT FACE - font-display: fallback; */
+@font-face {
+    font-family: 'AV';
+    src: url(../font/Avenir-Heavy.woff2) format('woff2'),
+        url(../font/Avenir-Heavy.woff) format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: 'EB';
+    src: url(../font/ElleBaskerville.woff2) format('woff2'),
+        url(../font/ElleBaskerville.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}

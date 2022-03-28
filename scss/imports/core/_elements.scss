@@ -1,4 +1,17 @@
 // css button, title, icon, elements...
 img {
-    max-width: 100%;
+  max-width: 100%;
+}
+.button {
+  background: $red-cl;
+  font-family: "AV";
+  font-size: 30px;
+  letter-spacing: -0.03em;
+  color: $white-cl;
+  height: 83px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
 }
