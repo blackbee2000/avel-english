@@ -13,6 +13,7 @@
 }
 html,
 body {
+  --heightHeader: 80px;
   width: 100%;
   max-width: $container-max-width;
   margin: auto;
@@ -58,19 +59,15 @@ body {
     padding-left: 0;
   }
   .title {
-    font-size: 70px;
-    font-family: "AV";
     letter-spacing: -0.03em;
+    @include text(70px, AV, normal, $text-black-cl, none);
   }
   .title-sub {
-    font-family: "AV";
-    font-size: 20px;
+    @include text(20px, AV, normal, $text-black-cl, none);
     letter-spacing: -0.03em;
-    color: $black-sub;
   }
-  .content {
-    font-family: "EB";
-    font-size: 25px;
+  .content{
+    @include text(25px, EB, normal, $black-sub, none);
     letter-spacing: -0.03em;
   }
   .flickity-viewport {
