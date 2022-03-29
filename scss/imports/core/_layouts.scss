@@ -17,7 +17,11 @@ body {
   --fsSubTitle: 20px;
   --fsTitle: 70px;
   --fsContent: 25px;
+  --sizedWhatDoWeDoImage: 606px;
+  --leftBeforeImage: -20px;
+  --topBeforeImage: -40px;
   width: 100%;
+  overflow-x: hidden;
   max-width: $container-max-width;
   margin: auto;
   @include text($fz-text, $font-main, $lh-text, $text-cl, none);
@@ -79,11 +83,11 @@ body {
   }
   .flickity-slider {
     height: 100%;
+    // transform: none !important;
   }
   .carousel-cell {
     width: 100%; /* full width */
     height: 100%;
-    margin-left: 10px;
   }
 
   @media (min-width: $xxs-min) {
@@ -114,9 +118,12 @@ body {
   }
   @include lg {
     // CSS responsive large desktop
-    --fsSubTitle: 14px;
+    --fsSubTitle: 16px;
     --fsTitle: 50px;
-    --fsContent: 16px;
+    --fsContent: 18px;
+    --sizedWhatDoWeDoImage: 500px;
+    --leftBeforeImage: 50px;
+    --topBeforeImage: -40px;
   }
   @include md {
     // CSS responsive desktop
