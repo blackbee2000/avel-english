@@ -45,8 +45,7 @@ header {
                     justify-content: center;
                     align-items: center;
                     text-decoration: none;
-                    @include text(25px, normal, 42px, #ffffff, none);
-                    font-weight: 400;
+                    @include text(25px, CT, 42px, #ffffff, none);
                 }
             }
         }

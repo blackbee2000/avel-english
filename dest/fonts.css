@@ -15,3 +15,11 @@
     font-style: normal;
     font-display: fallback;
 }
+@font-face {
+    font-family: 'CT';
+    src: url(../font/Chaostiq.woff2) format('woff2'),
+        url(../font/Chaostiq.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}

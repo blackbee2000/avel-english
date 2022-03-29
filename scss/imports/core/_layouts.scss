@@ -14,6 +14,9 @@
 html,
 body {
   --heightHeader: 80px;
+  --fsSubTitle: 20px;
+  --fsTitle: 70px;
+  --fsContent: 25px;
   width: 100%;
   max-width: $container-max-width;
   margin: auto;
@@ -60,14 +63,14 @@ body {
   }
   .title {
     letter-spacing: -0.03em;
-    @include text(70px, AV, normal, $text-black-cl, none);
+    @include text(var(--fsTitle), AV, normal, $text-black-cl, none);
   }
   .title-sub {
-    @include text(20px, AV, normal, $text-black-cl, none);
+    @include text(var(--fsSubTitle), AV, normal, $text-black-cl, none);
     letter-spacing: -0.03em;
   }
-  .content{
-    @include text(25px, EB, normal, $black-sub, none);
+  .content {
+    @include text(var(--fsContent), EB, normal, $black-sub, none);
     letter-spacing: -0.03em;
   }
   .flickity-viewport {
@@ -111,6 +114,9 @@ body {
   }
   @include lg {
     // CSS responsive large desktop
+    --fsSubTitle: 14px;
+    --fsTitle: 50px;
+    --fsContent: 16px;
   }
   @include md {
     // CSS responsive desktop

@@ -26,8 +26,12 @@
                         background-color: $white-cl;
                     }
                 }
+                .title{
+                    font-family: 'CT';
+                }
                 .button {
-                    padding: 21px 44px;
+                    padding-left: 35px;
+                    padding-right: 35px;
                     width: max-content;
                 }
             }
@@ -39,7 +43,7 @@
                 justify-content: flex-end;
                 &--img {
                     width: 100%;
-                    height: calc(100% - 190px);
+                    height: calc(100% - 100px);
                     position: relative;
                     overflow: hidden;
                     border-radius: 10px;
