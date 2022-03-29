@@ -1,1 +1,8 @@
-// css components
+section {
+    height: 100vh;
+    width: 100%;
+    @include mid(true);
+    .title-sub {
+        @include subTitle(true);
+    }
+} // css components

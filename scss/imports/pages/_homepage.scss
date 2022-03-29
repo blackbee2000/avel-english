@@ -1,4 +1,5 @@
 section {
+  height: 100vh;
   @include mid(true);
   .title-sub {
     @include subTitle(true);
