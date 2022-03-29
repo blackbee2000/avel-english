@@ -8,23 +8,25 @@
     <title>Trungbeo</title>
     <link rel="stylesheet" href="dest/style.min.css">
     <link rel="stylesheet" href="dest/fonts.css">
+    <link rel="stylesheet" href="dest/stylelibs.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity-fade@2/flickity-fade.css">
 </head>
 
 <body>
     <header></header>
     <main>
-        <section class="information" id="section">
+        <section id="section" class="information">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 left">
+                    <div class="col-md-6 left col-12">
                         <div class="image">
-                            <img src="assets/teacher.jpg" alt="teacher">
+                            <img src="assets/teacher.jpg" alt="">
                         </div>
                         <img src="assets/icon/circle.svg" alt="vector" class="circle-right">
                         <img src="assets/icon/circle-bot.svg" alt="vector" class="circle-left">
                     </div>
                     <div class="offset-md-1"></div>
-                    <div class="col-md-5 right">
+                    <div class="col-md-5 right col-12">
                         <h3 class="title-sub">Get acess to high quality learning</h3>
                         <h2 class="title">What do we do?</h2>
                         <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
@@ -67,9 +69,19 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="right">
-                                <img src="assets/settle.png" alt="settle">
-                                <div class="name">England</div>
+                            <div class="right carousel slider">
+                                <div class="carousel-cell slider_child">
+                                    <img src="assets/settle.png" alt="settle">
+                                    <div class="name">England</div>
+                                </div>
+                                <div class="carousel-cell slider_child">
+                                    <img src="assets/settle.png" alt="settle">
+                                    <div class="name">American</div>
+                                </div>
+                                <div class="carousel-cell slider_child">
+                                    <img src="assets/settle.png" alt="settle">
+                                    <div class="name">Tukan</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -79,11 +91,14 @@
             </div>
             <div class="background-v2">
             </div>
+            <div class="background-circle"></div>
         </section>
     </main>
     <footer></footer>
     <script type="text/javascript" src="dest/jsmain.min.js"></script>
     <script type="text/javascript" src="dest/main-page.js"></script>
+    <script src="https://unpkg.com/flickity-fade@2/flickity-fade.js"></script>
+
 </body>
 
 </html>

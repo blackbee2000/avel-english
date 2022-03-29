@@ -1,162 +1,185 @@
-section {
-  @include mid(true);
-}
-.information {
-  .title-sub {
-    @include subTitle(true);
+body {
+  overflow-x: hidden;
+  section {
+    height: 100vh;
+    @include mid(true);
   }
-  .left {
-    height: 606px;
+  .information {
     position: relative;
-    .image {
-      width: 606px;
-      height: 606px;
-      border-radius: 100%;
-      overflow: hidden;
+    .container {
       position: absolute;
       z-index: 2;
-      transition: $t;
-      img {
-        @include midimg(606px);
-      }
-    }
-    &::before {
-      position: absolute;
-      left: -20px;
-      top: -40px;
-      width: 606px;
-      height: 606px;
-      content: "";
-      background: $yellow-cl;
-      border-radius: 100%;
-      transition: 0.5s;
-    }
-    &::after {
-      position: absolute;
-      right: -10px;
-      bottom: -40px;
-      width: 606px;
-      height: 606px;
-      content: "";
-      z-index: 1;
-      background: $green-cl;
-      border-radius: 100%;
-      transition: 0.5s;
-    }
-    .circle-right {
-      position: absolute;
-      right: 0;
-      top: 0;
-      opacity: 1;
-      transition: 0.5s;
-    }
-    .circle-left {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      opacity: 1;
-      transition: 0.5s;
-    }
-    &:hover {
-      &::before {
-        transform: translate(100px, -100px);
-        transition: 0.5s;
-      }
-      &::after {
-        transform: translate(-100px, 100px);
-        transition: 0.5s;
-      }
-      .circle-right {
-        // transform: translate(80px, 350px) rotate(60deg) ;
-        opacity: 0;
-        transition: 0.2s;
-      }
-      .circle-left {
-        opacity: 0;
-        transition: 0.2s;
-      }
-      .image {
-        transition: $t;
-        width: 620px;
-        height: 620px;
-      }
-    }
-  }
-  .right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    &:nth-child(0) {
-      padding-left: 10px;
-    }
-  }
-}
-.studySettle {
-  background: $white-blue;
-  padding-top: 170px;
-  padding-bottom: 65px;
-  position: relative;
-  width: 100%;
-  .background-v1 {
-    position: absolute;
-    background: $white-blue;
-    height: 65%;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  .background-v2 {
-    position: absolute;
-    background: $white-cl;
-    height: 45%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-  .content {
-    position: relative;
-    z-index: 9;
-    .left {
-      &-title {
-        text-align: right;
+      .left {
         position: relative;
-        margin-bottom: 100px;
-        .title-two {
-          top: 150px;
-          right: 0;
+        .image {
+          width: 606px;
+          height: 606px;
+          overflow: hidden;
+          border-radius: 100%;
+          position: relative;
+          z-index: 2;
+          transition: $t;
+          cursor: pointer;
+          img {
+            @include midimg(606px);
+          }
+        }
+        &::before {
           position: absolute;
+          width: 100%;
+          height: 100%;
+          left: -20px;
+          top: -40px;
+          content: "";
+          background: $yellow-cl;
+          border-radius: 100%;
+          transition: $t;
+        }
+        &::after {
+          position: absolute;
+          right: -10px;
+          bottom: -40px;
+          width: 100%;
+          height: 100%;
+          content: "";
+          z-index: 1;
+          background: $green-cl;
+          border-radius: 100%;
+          transition: $t;
+        }
+        .circle-right {
+          position: absolute;
+          right: 0;
+          top: 0;
+          opacity: 1;
+          transition: $t;
+        }
+        .circle-left {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          opacity: 1;
+          transition: $t;
+        }
+        &:hover {
+          &::before {
+            transform: translate(50px, -50px);
+            transition: $t;
+          }
+          &::after {
+            transform: translate(-50px, 50px);
+            transition: $t;
+          }
+          .circle-right {
+            opacity: 0;
+            transition: 0.2s;
+          }
+          .circle-left {
+            opacity: 0;
+            transition: 0.2s;
+          }
+          .image {
+            transform: scale(0.85);
+            transition: $t;
+          }
         }
       }
-      &-content {
-        text-align: right;
+      .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
     }
-    .right {
+  }
+  .studySettle {
+    padding-top: 150px;
+    padding-bottom: 70px;
+    position: relative;
+    width: 100%;
+    .background-v1 {
+      position: absolute;
+      background: $white-blue;
+      height: 65%;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+    .background-v2 {
+      position: absolute;
+      background: $white-cl;
+      height: 45%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    .content {
       position: relative;
-      height: 100%;
-      border-radius: 10px;
-      overflow: hidden;
-      img {
-        @include midimg(100%);
+      z-index: 3;
+      .left {
+        &-title {
+          text-align: right;
+          position: relative;
+          margin-bottom: 100px;
+          .title-two {
+            top: 150px;
+            right: 0;
+            position: absolute;
+          }
+        }
+        &-content {
+          text-align: right;
+        }
       }
-      &::before {
-        position: absolute;
+      .right {
         width: 100%;
         height: 100%;
-        content: "";
-        background: rgba(0, 0, 0, 0.6);
-        z-index: 1;
+        border-radius: 10px;
+        overflow: hidden;
+        .slider_child {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          img {
+            @include midimg(100%);
+          }
+          &::before {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: "";
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+          }
+          .name {
+            position: absolute;
+            bottom: 25px;
+            font-family: "AV";
+            left: 50%;
+            color: $white-cl;
+            z-index: 2;
+            transform: translateX(-50%);
+            letter-spacing: -0.03em;
+            font-size: 50px;
+          }
+        }
       }
-      .name{
-        position: absolute;
-        bottom: 25px;
-        font-family: 'AV';
-        left: 50%;
-        color: $white-cl;
-        z-index: 2;
-        transform: translateX(-50%);
-        letter-spacing: -0.03em;
-        font-size: 50px;
+    }
+    .background-circle {
+      background: $yellow-cl;
+      position: absolute;
+      width: 980px;
+      height: 980px;
+      border-radius: 100%;
+      right: -300px;
+      top: -300px;
+      z-index: 1;
+    }
+  }
+
+  @media (min-width: $sm-min) {
+    .information {
+      .container {
+        width: 100%;
       }
     }
   }

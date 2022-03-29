@@ -68,11 +68,24 @@ body {
     letter-spacing: -0.03em;
     color: $black-sub;
   }
-  .content{
-    font-family: 'EB';
+  .content {
+    font-family: "EB";
     font-size: 25px;
     letter-spacing: -0.03em;
   }
+  .flickity-viewport {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .flickity-slider {
+    height: 100%;
+  }
+  .carousel-cell {
+    width: 100%; /* full width */
+    height: 100%;
+    margin-left: 10px;
+  }
+
   @media (min-width: $xxs-min) {
     .container {
       max-width: 540px;
