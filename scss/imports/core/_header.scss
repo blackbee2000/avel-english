@@ -50,6 +50,21 @@ header {
           text-decoration: none;
           @include text(25px, CT, 42px, $white-cl, none);
           transition: $t;
+          position: relative;
+          &::before {
+            content: "";
+            width: 0;
+            height: 2px;
+            background: $white-cl;
+            display: block;
+            position: absolute;
+            bottom: 30%;
+            @include transition($t);
+          }
+          &:hover::before {
+            width: 100%;
+            @include transition($t);
+          }
         }
       }
     }
