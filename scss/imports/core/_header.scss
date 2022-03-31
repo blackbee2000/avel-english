@@ -36,12 +36,6 @@ header {
       li {
         height: 100%;
         padding: 0 15px;
-        // &:first-child {
-        //   padding-left: 0;
-        // }
-        // &:last-child {
-        //   padding-right: 0;
-        // }
         a {
           height: 100%;
           display: flex;
@@ -88,4 +82,7 @@ header {
 .backMenu {
   color: #000 !important;
   transition: $t;
+  &::before {
+    background: #000 !important;
+  }
 }

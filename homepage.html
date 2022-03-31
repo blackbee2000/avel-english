@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trungbeo</title>
-    <link rel="stylesheet" href="dest/style.min.css" />
-    <link rel="stylesheet" href="dest/fonts.css" />
-    <link rel="stylesheet" href="dest/stylelibs.min.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="logo">
-          <a href="#">
-            <img src="img/avel-logo.png" alt="avel-logo" />
-            <h1 class="hidden">Avel English</h1>
-          </a>
-        </div>
-        <ul class="menu">
-          <li><a href="#" class="activeMenu">Home</a></li>
-          <li><a href="#">Course</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Feedback</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trungbeo</title>
+  <link rel="stylesheet" href="dest/style.min.css" />
+  <link rel="stylesheet" href="dest/fonts.css" />
+  <link rel="stylesheet" href="dest/stylelibs.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="#">
+          <img src="img/avel-logo.png" alt="avel-logo" />
+          <h1 class="hidden">Avel English</h1>
+        </a>
       </div>
-    </header>
-    <main>
-      <section class="slider">
+      <ul class="menu">
+        <li><a href="#home" class="activeMenu">Home</a></li>
+        <li><a href="#studySettle">Course</a></li>
+        <li><a href="#aboutUs">About Us</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="scrolling-box">
+      <section id="home" class="slider">
         <div class="slider__card">
           <div class="slider__card_img">
             <img src="img/slider-background.jpg" alt="slider-background" />
@@ -47,19 +50,19 @@
                 </div>
                 <div class="slider__card_content-left--title">
                   <h2 class="title active--title" style="--delay: 0.9s">
-                    Wellcome to Avel English
+                    Welcome to Avel English
                   </h2>
                   <h2 class="title" style="--delay: 0.9s">
-                    Wellcome to Avel English
+                    Welcome to Avel English
                   </h2>
                   <h2 class="title" style="--delay: 0.9s">
-                    Wellcome to Avel English
+                    Welcome to Avel English
                   </h2>
                   <h2 class="title" style="--delay: 0.9s">
-                    Wellcome to Avel English
+                    Welcome to Avel English
                   </h2>
                   <h2 class="title" style="--delay: 0.9s">
-                    Wellcome to Avel English
+                    Welcome to Avel English
                   </h2>
                 </div>
                 <div class="slider__card_content-left--content">
@@ -109,31 +112,11 @@
               </div>
               <div class="slider__card_content-right col-md-5 offset-md-1">
                 <div class="slider__card_content-right--img">
-                  <img
-                    class="gallery-cell"
-                    src="img/img-slider-one.jpg"
-                    alt="img-slider-one"
-                  />
-                  <img
-                    class="gallery-cell"
-                    src="img/img-slider-one.jpg"
-                    alt="img-slider-one"
-                  />
-                  <img
-                    class="gallery-cell"
-                    src="img/img-slider-one.jpg"
-                    alt="img-slider-one"
-                  />
-                  <img
-                    class="gallery-cell"
-                    src="img/img-slider-one.jpg"
-                    alt="img-slider-one"
-                  />
-                  <img
-                    class="gallery-cell"
-                    src="img/img-slider-one.jpg"
-                    alt="img-slider-one"
-                  />
+                  <img class="gallery-cell" src="img/img-slider-one.jpg" alt="img-slider-one" />
+                  <img class="gallery-cell" src="img/img-slider-one.jpg" alt="img-slider-one" />
+                  <img class="gallery-cell" src="img/img-slider-one.jpg" alt="img-slider-one" />
+                  <img class="gallery-cell" src="img/img-slider-one.jpg" alt="img-slider-one" />
+                  <img class="gallery-cell" src="img/img-slider-one.jpg" alt="img-slider-one" />
                 </div>
               </div>
               <div class="slider__card_content-control">
@@ -154,23 +137,15 @@
           </div>
         </div>
       </section>
-      <section id="section" class="information">
+      <section id="information" class="information">
         <div class="container">
           <div class="row">
             <div class="col-md-6 left col-12">
               <div class="image">
                 <img src="assets/teacher.jpg" alt="" />
               </div>
-              <img
-                src="assets/icon/circle.svg"
-                alt="vector"
-                class="circle-right"
-              />
-              <img
-                src="assets/icon/circle-bot.svg"
-                alt="vector"
-                class="circle-left"
-              />
+              <img src="assets/icon/circle.svg" alt="vector" class="circle-right" />
+              <img src="assets/icon/circle-bot.svg" alt="vector" class="circle-left" />
             </div>
             <div class="offset-md-1"></div>
             <div class="col-md-5 right col-12">
@@ -191,7 +166,7 @@
           </div>
         </div>
       </section>
-      <section class="studySettle row" id="section">
+      <section id="studySettle" class="studySettle row" id="section">
         <div class="content">
           <div class="container">
             <div class="row">
@@ -244,28 +219,19 @@
                 <div class="right carousel slider">
                   <div class="carousel-cell slider_child">
                     <div class="image">
-                      <img
-                        data-flickity-lazyload="assets/settle.png"
-                        alt="settle"
-                      />
+                      <img data-flickity-lazyload="assets/settle.png" alt="settle" />
                       <div class="name">England</div>
                     </div>
                   </div>
                   <div class="carousel-cell slider_child">
                     <div class="image">
-                      <img
-                        data-flickity-lazyload="assets/american.jpg"
-                        alt="settle"
-                      />
+                      <img data-flickity-lazyload="assets/american.jpg" alt="settle" />
                       <div class="name">American</div>
                     </div>
                   </div>
                   <div class="carousel-cell slider_child">
                     <div class="image">
-                      <img
-                        data-flickity-lazyload="assets/france.jpg"
-                        alt="settle"
-                      />
+                      <img data-flickity-lazyload="assets/france.jpg" alt="settle" />
                       <div class="name">France</div>
                     </div>
                   </div>
@@ -278,8 +244,10 @@
         <div class="background-v2"></div>
         <div class="background-circle"></div>
       </section>
-    </main>
-    <footer class="footer">
+    </div>
+  </main>
+  <footer>
+    <div class="container footer">
       <div class="footer_logo">
         <a href="#">
           <img src="img/avel-logo.png" alt="avel-logo" />
@@ -292,17 +260,25 @@
       <div class="footer_phone">Phone: 0344.152.125</div>
       <div class="footer_social">
         <div class="footer_social-item">
-          <a href="#"><img src="img/icon-facebook.svg" alt="icon-facebook"/></a>
+          <a href="#"><img src="img/icon-facebook.svg" alt="icon-facebook" /></a>
         </div>
         <div class="footer_social-item">
-          <a href="#"><img src="img/icon-instagram.svg" alt="icon-facebook"/></a>
+          <a href="#"><img src="img/icon-instagram.svg" alt="icon-facebook" /></a>
         </div>
         <div class="footer_social-item">
-          <a href="#"><img src="img/icon-facebook.svg" alt="icon-facebook"/></a>
+          <a href="#"><img src="img/icon-facebook.svg" alt="icon-facebook" /></a>
         </div>
       </div>
-    </footer>
-    <script type="text/javascript" src="dest/jsmain.min.js"></script>
-    <script type="text/javascript" src="dest/main-page.js"></script>
-  </body>
+      <div class="back">
+        <div class="backTop">
+          <img src="assets/icon/backtop.svg" alt="arrow">
+          <p>Back to top</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="dest/jsmain.min.js"></script>
+  <script type="text/javascript" src="dest/main-page.js"></script>
+</body>
+
 </html>

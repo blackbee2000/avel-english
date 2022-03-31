@@ -119,4 +119,11 @@ window.addEventListener('scroll', function () {
         menu.removeClass('backMenu');
     }
 })
+//scroll top
+let icback = document.querySelector('.back');
+icback.addEventListener('click', function () {
+    window.scrollBy({
+        top: -document.body.offsetHeight,
+    })
+})
 
