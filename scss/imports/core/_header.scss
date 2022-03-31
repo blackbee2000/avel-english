@@ -8,11 +8,10 @@ header {
   z-index: 100;
   transition: $t;
   .container {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-right: 30px;
-    padding-left: 30px;
-
+    margin-top: 0px;
+    margin-bottom: 0px;
+    // padding-right: 15px;
+    // padding-left: 15px;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -36,20 +35,21 @@ header {
       align-items: center;
       li {
         height: 100%;
-        padding: 0 16px;
-        &:first-child {
-          padding-left: 0;
-        }
-        &:last-child {
-          padding-right: 0;
-        }
+        padding: 0 15px;
+        // &:first-child {
+        //   padding-left: 0;
+        // }
+        // &:last-child {
+        //   padding-right: 0;
+        // }
         a {
           height: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
           text-decoration: none;
-          @include text(25px, CT, 42px, #ffffff, none);
+          @include text(25px, CT, 42px, $white-cl, none);
+          transition: $t;
         }
       }
     }
@@ -61,14 +61,16 @@ header {
   backdrop-filter: blur(5px);
   transition: $t;
   .container {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
     transition: $t;
   }
 }
 .active-v2 {
   transform: translateY(0px);
   transition-duration: 0.1s;
+}
+.backMenu {
+  color: #000 !important;
+  transition: $t;
 }

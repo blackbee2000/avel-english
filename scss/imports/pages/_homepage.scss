@@ -144,8 +144,8 @@ body {
               visibility: visible;
               opacity: 1;
               transform: translateY(0px);
-              transition-delay: $t + 0.7s !important;
-              transition: $t;
+              transition-delay: $t + 0.5s !important;
+              transition: 0.5s;
             }
           }
         }
@@ -155,19 +155,6 @@ body {
         height: 100%;
         border-radius: 10px;
         overflow: hidden;
-        /* flickity-fade */
-        .carousel-cell {
-          opacity: 0;
-          transition-delay: 0.2s !important;
-          transition: $t ease-in-out;
-          z-index: -1;
-        }
-        .carousel-cell.is-selected {
-          opacity: 1;
-          z-index: 0;
-          transition-delay: 0.2s !important;
-          transition: $t ease-in-out;
-        }
         .flickity-button {
           background: transparent !important;
           color: white;
@@ -195,17 +182,15 @@ body {
               transition: $t;
             }
             .name {
+              @include text(50px, "AV", normal, $white-cl, none);
+              letter-spacing: -0.03em;
               position: absolute;
               bottom: 25px;
-              font-family: "AV";
               left: 50%;
-              color: $white-cl;
               transform: translateX(-50%);
-              letter-spacing: -0.03em;
-              font-size: 50px;
               z-index: 2;
               opacity: 0;
-              transition: opacity $t ease-in-out;
+              transition: opacity 0.2s ease-in-out;
             }
           }
         }
@@ -213,8 +198,7 @@ body {
           .image .name {
             transition-delay: $t + 0.2s !important;
             opacity: 1;
-            transition-duration: $t;
-            transition: opacity $t ease-in-out;
+            transition: opacity 0.2s ease-in-out;
           }
         }
       }

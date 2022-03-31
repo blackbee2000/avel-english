@@ -3,10 +3,10 @@ $('.carousel').flickity({
     cellAlign: 'left',
     contain: true,
     draggable: true,
-    selectedAttraction: 0.01,
-    friction: 0.15,
+    // selectedAttraction: 0.01,
+    // friction: 0.15,
     imagesLoaded: true,
-    lazyLoad: true,
+    lazyLoad: 2,
     on: {
         ready: function (index) {
 
@@ -34,16 +34,19 @@ $carousel.on('scroll.flickity', function (event, progress) {
 //scroll header
 window.addEventListener('scroll', function () {
     var heightScroll = document.documentElement.scrollTop;
-    console.log(heightScroll);
-    if (heightScroll > 150) {
-        $('.header').addClass('active');
-        // transform: translateY(0px);
-        // $('.header').translateY = 'transform: translateY(0px)';
-        // this.setTimeout(function () {
-        //     document.querySelector('.header').classList.add('active-v2');
-        // }, 700)
+    var header = $('.header');
+    var menu = $('header .container .menu li a');
+    if (heightScroll > 100) {
+        header.addClass('active');
     } else {
-        $('.header').removeClass('active')
-        // document.querySelector('.header').classList.remove('active-v2');
+        header.removeClass('active');
+    }
+    console.log('====================================');
+    console.log((heightScroll / this.window.innerHeight));
+    console.log('====================================');
+    if (heightScroll / this.window.innerHeight >= 0.99) {
+        menu.addClass('backMenu');
+    } else {
+        menu.removeClass('backMenu');
     }
 })
