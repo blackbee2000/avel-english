@@ -7,6 +7,7 @@ $(".carousel").flickity({
   // friction: 0.15,
   imagesLoaded: true,
   lazyLoad: 2,
+  pageDots: false,
   on: {
     ready: function (index) {},
     change: function (index) {
@@ -128,7 +129,6 @@ $(".course__item_img").flickity({
   cellAlign: "left",
   contain: true,
   imagesLoaded: true,
-  wrapAround: true,
   prevNextButtons: false,
   pageDots: false,
   lazyLoad: true,

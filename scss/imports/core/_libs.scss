@@ -98,9 +98,9 @@ https://flickity.metafizzy.co
     line-height: 1;
     margin-left: 5px !important;
     display: flex !important;
-    &:last-child {
-        display: none !important;
-    }
+    // &:last-child {
+    //     display: none !important;
+    // }
 }
 .flickity-rtl .flickity-page-dots {
     direction: rtl;
