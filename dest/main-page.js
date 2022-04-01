@@ -1,4 +1,4 @@
-$('.carousel').flickity({
+$('.studySettle .carousel').flickity({
     // options
     cellAlign: 'left',
     contain: true,
@@ -19,6 +19,27 @@ $('.carousel').flickity({
         }
     }
 })
+$('.aboutUs .carousel').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true,
+    draggable: true,
+    // selectedAttraction: 0.01,
+    // friction: 0.15,
+    imagesLoaded: true,
+    lazyLoad: true,
+    on: {
+        ready: function (index) {
+
+        },
+        change: function (index) {
+            // let content = $('.paragraph-text');
+            // console.log(content);
+            // content.eq(index).addClass('active-content');
+            // content.eq(index).siblings('p').removeClass('active-content');
+        }
+    }
+})
 //parallax
 var $carousel = $(".carousel").flickity();
 var flkty = $carousel.data("flickity");
@@ -36,7 +57,7 @@ $(".slider__card_content-right--img").flickity({
     cellAlign: "left",
     contain: true,
     draggable: true,
-    selectedAttraction: 0.01,
+    selectedAttraction: 0.008,
     friction: 0.1,
     imagesLoaded: true,
     lazyLoad: true,
