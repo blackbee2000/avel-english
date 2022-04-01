@@ -6,3 +6,15 @@ section {
         @include subTitle(true);
     }
 } // css components
+.cursor {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: $white-cl;
+    position: absolute;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 1000000;
+    // transition-duration: 20ms;
+    // transition-timing-function: ease-out;
+}
