@@ -52,14 +52,14 @@ module.exports = grunt => {
 				files: "<%= dirs.scss %>/**/**/*.scss",
 				tasks: ['sass']
 			},
-			// cssmin: {
-			//     files: "<%= dirs.css %>/**/*.css",
-			//     tasks: ['cssmin']
-			// },
-			// uglify: {
-			//     files: ['<%= dirs.js %>/*.js'],
-			//     tasks: ['uglify']
-			// },
+			cssmin: {
+			    files: "<%= dirs.css %>/**/*.css",
+			    tasks: ['cssmin']
+			},
+			uglify: {
+			    files: ['<%= dirs.js %>/*.js'],
+			    tasks: ['uglify']
+			},
 		},
 
 		browserSync: {
