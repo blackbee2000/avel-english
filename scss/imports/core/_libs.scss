@@ -2,7 +2,6 @@
 https://flickity.metafizzy.co
 ---------------------------------------------- */
 .flickity-enabled {
-    position: relative;
 }
 .flickity-enabled:focus {
     outline: 0;
@@ -99,6 +98,9 @@ https://flickity.metafizzy.co
     line-height: 1;
     margin-left: 5px !important;
     display: flex !important;
+    &:last-child {
+        display: none !important;
+    }
 }
 .flickity-rtl .flickity-page-dots {
     direction: rtl;
