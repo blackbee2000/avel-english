@@ -56,7 +56,6 @@
                     opacity: 0;
                     pointer-events: none;
                     @include transition($t);
-                    transition-delay: calc(var(--delay));
                 }
                 &--content {
                     opacity: 0;
@@ -99,7 +98,6 @@
                     .family__img_list-item--opacity {
                         opacity: 1;
                         @include transition($t);
-                        transition-delay: calc(var(--delay));
                     }
                     .family__img_list-item--content {
                         opacity: 1;
@@ -158,63 +156,76 @@
                 width: 100%;
                 padding-bottom: 20px;
                 position: relative;
-                label {
-                    position: absolute;
-                    top: 38.5%;
-                    left: 15px;
-                    transform: translateY(-50%);
-                    @include text(16px, AV, normal, $white-cl, none);
-                    letter-spacing: -0.03em;
-                    opacity: 0.5;
-                    user-select: none;
-                    pointer-events: none;
-                    transition: $t;
-                }
+                // label {
+                //     position: absolute;
+                //     top: 38.5%;
+                //     left: 15px;
+                //     transform: translateY(-50%);
+                //     @include text(16px, AV, normal, $white-cl, none);
+                //     letter-spacing: -0.03em;
+                //     opacity: 0.5;
+                //     user-select: none;
+                //     pointer-events: none;
+                //     transition: $t;
+                // }
                 input {
                     width: 100%;
                     height: 45px;
-                    border: $white-cl 1px solid;
-                    outline: $white-cl 1px solid;
+                    border: none;
+                    border-bottom: $white-cl 1px solid;
+                    outline: none;
                     background-color: transparent;
-                    border-radius: 5px;
+                    // border-radius: 5px;
                     padding: 15px;
                     @include text(16px, AV, normal, $white-cl, none);
                     letter-spacing: -0.03em;
-                    transition: $t;
-                    z-index: 1;
-                    &:not(:placeholder-shown) + label, &:focus + label{
-                        transition: $t;
-                        opacity: 1;
-                        top: 0;
-                        left: 6px;
-                        padding: 10px;
-                        display: inline-block;
-                        background: transparent;
-                        z-index: 10;
+                    &::placeholder {
+                        @include text(16px, AV, normal, $white-cl, none);
+                        opacity: 0.5;
                     }
+                    // transition: $t;
+                    // z-index: 1;
+                    // &:not(:placeholder-shown) + label,
+                    // &:focus + label {
+                    //     transition: $t;
+                    //     opacity: 1;
+                    //     top: 0;
+                    //     left: 6px;
+                    //     padding: 10px;
+                    //     display: inline-block;
+                    //     background: transparent;
+                    //     z-index: 10;
+                    // }
                 }
                 textarea {
                     width: 100%;
-                    height: 80px;
-                    border: $white-cl 1px solid;
-                    outline: $white-cl 1px solid;
+                    height: 80 px;
+                    border: none;
+                    border-bottom: $white-cl 1px solid;
+                    outline: none;
                     background-color: transparent;
-                    border-radius: 5px;
+                    // border-radius: 5px;
                     padding: 15px;
+                    resize: none;
                     @include text(16px, AV, normal, $white-cl, none);
                     letter-spacing: -0.03em;
-                    transition: $t;
-                    z-index: 1;
-                    &:not(:placeholder-shown) + label, &:focus + label{
-                        transition: $t;
-                        opacity: 1;
-                        top: 0;
-                        left: 6px;
-                        padding: 10px;
-                        display: inline-block;
-                        background: transparent;
-                        z-index: 10;
+                    &::placeholder {
+                        @include text(16px, AV, normal, $white-cl, none);
+                        opacity: 0.5;
                     }
+                    // transition: $t;
+                    // z-index: 1;
+                    // &:not(:placeholder-shown) + label,
+                    // &:focus + label {
+                    //     transition: $t;
+                    //     opacity: 1;
+                    //     top: 0;
+                    //     left: 6px;
+                    //     padding: 10px;
+                    //     display: inline-block;
+                    //     background: transparent;
+                    //     z-index: 10;
+                    // }
                 }
             }
             .button {
@@ -243,5 +254,44 @@
         .contact__content_img {
             right: 0;
         }
+    }
+}
+
+//---------------------------------------------------Feed back ---------------------------------------------------
+.feedback {
+    width: 100%;
+    position: relative;
+    background-color: #f4f6fd;
+    &__backgroundOrange {
+        background-color: #fba310;
+        width: 100%;
+        height: 50vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .container {
+        height: 100%;
+    }
+    &__title {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        .title-sub{
+            color: $white-cl;
+            &::before{
+                background-color: $white-cl;
+            }
+        }
+        &_label {
+            @include text(70px, AV, 96px, $white-cl, none);
+            z-index: 10;
+        }
+    }
+    &__content {
+        height: 80%;
     }
 }
