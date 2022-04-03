@@ -1,13 +1,79 @@
 //-----------------------------------cursor--------------------------------------------------
 let cursor = document.querySelector(".cursor");
 document.addEventListener("mousemove", (e) => {
-  // console.log(e.pageY, e.pageX);
   cursor.setAttribute(
     "style",
     "top: " + (e.pageY - 15) + "px; left:" + (e.pageX - 15) + "px;"
   );
 });
-
+function hoverElement() {
+  var cursor1 = $('.cursor');
+  var logo = $('.logo');
+  var menu = $('header .container .menu li');
+  var sub = $('.title-sub');
+  var title = $('.title');
+  var content = $('.content');
+  var title_course = $('.course__title');
+  var button = $('.button');
+  var paragraphAbout = $('.aboutUs .paragraph')
+  //logo
+  logo.mouseover(function () {
+    cursor1.addClass('hover-logo')
+  })
+  logo.mouseout(function () {
+    cursor1.removeClass('hover-logo')
+  })
+  //menu-header
+  menu.mouseover(function () {
+    cursor1.addClass('hover-menu')
+  })
+  menu.mouseout(function () {
+    cursor1.removeClass('hover-menu')
+  })
+  //title
+  title.mouseover(function () {
+    cursor1.addClass('hover-element')
+  })
+  title.mouseout(function () {
+    cursor1.removeClass('hover-element')
+  })
+  //sub
+  sub.mouseover(function () {
+    cursor1.addClass('hover-element')
+  })
+  sub.mouseout(function () {
+    cursor1.removeClass('hover-element')
+  })
+  //content
+  content.mouseover(function () {
+    cursor1.addClass('hover-element')
+  })
+  content.mouseout(function () {
+    cursor1.removeClass('hover-element')
+  })
+  //title-course
+  title_course.mouseover(function () {
+    cursor1.addClass('hover-element')
+  })
+  title_course.mouseout(function () {
+    cursor1.removeClass('hover-element')
+  })
+  //button
+  button.mouseover(function () {
+    cursor1.addClass('hover-element')
+  })
+  button.mouseout(function () {
+    cursor1.removeClass('hover-element')
+  })
+  //about Us
+  paragraphAbout.mouseover(function () {
+    cursor1.addClass('hover-element')
+  })
+  paragraphAbout.mouseout(function () {
+    cursor1.removeClass('hover-element')
+  })
+}
+hoverElement();
 //----------------------------------------------------------------------------------------
 $(".studySettle .carousel").flickity({
   cellAlign: "left",
@@ -152,6 +218,9 @@ window.addEventListener("scroll", function () {
   } else if (heightScroll < this.window.innerHeight * 5) {
     $("header .container .menu li a").removeClass('active-menu');
     $("header .container .menu .aboutUsMenu").addClass('active-menu');
+  } else if (heightScroll < this.window.innerHeight * 6) {
+    $("header .container .menu li a").removeClass('active-menu');
+    $("header .container .menu .feedbackMenu").addClass('active-menu');
   }
   // if(heightScroll )
 });

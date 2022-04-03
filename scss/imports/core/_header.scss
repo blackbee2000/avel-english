@@ -19,6 +19,7 @@ header {
     transition: $t;
     .logo {
       a {
+        cursor: none;
         img {
           width: 186px;
           height: 38px;
@@ -42,6 +43,7 @@ header {
           justify-content: center;
           align-items: center;
           text-decoration: none;
+          cursor: none;
           @include text(25px, CT, 42px, $white-cl, none);
           transition: $t;
           position: relative;

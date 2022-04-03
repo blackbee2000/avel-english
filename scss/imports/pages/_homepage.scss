@@ -297,7 +297,7 @@ body {
       left: 0;
       right: 0;
     }
-    .content {
+    .content-study {
       position: relative;
       z-index: 3;
       width: 100%;
@@ -399,7 +399,7 @@ body {
   .aboutUs {
     padding-top: 90px;
     padding-bottom: 20px;
-    .content {
+    .content-about {
       position: relative;
       height: calc(100vh - (90px + 20px));
       .slider {
@@ -473,7 +473,7 @@ body {
 @media (max-width: $lg-max) {
   body {
     .studySettle {
-      .content {
+      .content-study {
         .left {
           &-title {
             margin-bottom: 50px;
