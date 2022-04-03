@@ -1,557 +1,695 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trungbeo</title>
+    <link rel="stylesheet" href="dest/style.min.css" />
+    <link rel="stylesheet" href="dest/fonts.css" />
+    <link rel="stylesheet" href="dest/stylelibs.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trungbeo</title>
-  <link rel="stylesheet" href="dest/style.min.css" />
-  <link rel="stylesheet" href="dest/fonts.css" />
-  <link rel="stylesheet" href="dest/stylelibs.min.css" />
-</head>
-
-<body>
-  <div class="cursor"></div>
-  <header class="header">
-    <div class="container">
-      <div class="logo">
-        <a href="#">
-          <img src="img/avel-logo.png" alt="avel-logo" />
-          <h1 class="hidden">Avel English</h1>
-        </a>
+  <body>
+    <div class="cursor"></div>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="#">
+            <img src="img/avel-logo.png" alt="avel-logo" />
+            <h1 class="hidden">Avel English</h1>
+          </a>
+        </div>
+        <ul class="menu">
+          <li><a href="#home" class="activeMenu homeMenu">Home</a></li>
+          <li><a href="#course" class="courseMenu">Course</a></li>
+          <li><a href="#aboutUs" class="aboutUsMenu">About Us</a></li>
+          <li><a href="#feedback" class="feedbackMenu">Feedback</a></li>
+          <li><a href="#contact" class="contactMenu">Contact</a></li>
+        </ul>
       </div>
-      <ul class="menu">
-        <li><a href="#home" class="activeMenu homeMenu">Home</a></li>
-        <li><a href="#course" class="courseMenu">Course</a></li>
-        <li><a href="#aboutUs" class="aboutUsMenu">About Us</a></li>
-        <li><a href="#feedback" class="feedbackMenu">Feedback</a></li>
-        <li><a href="#contact" class="contactMenu">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-  <main>
-    <div class="scrolling-box">
-      <section id="slider" class="slider">
-        <div class="slider__card">
-          <div class="slider__card_img">
-            <img src="img/slider-background.jpg" alt="slider-background" />
-          </div>
-          <div class="container">
-            <div class="slider__card_content row">
-              <div class="slider__card_content-left col-md-6">
-                <div class="slider__card_content-left--subTitle">
-                  <h3 class="title-sub active--title-sub" style="--delay: 0.6s">
-                    Get started
-                  </h3>
-                  <h3 class="title-sub" style="--delay: 0.6s">Get started</h3>
-                  <h3 class="title-sub" style="--delay: 0.6s">Get started</h3>
-                  <h3 class="title-sub" style="--delay: 0.6s">Get started</h3>
-                  <h3 class="title-sub" style="--delay: 0.6s">Get started</h3>
-                </div>
-                <div class="slider__card_content-left--title">
-                  <h2 class="title active--title" style="--delay: 0.9s">
-                    Welcome to Avel English
-                  </h2>
-                  <h2 class="title" style="--delay: 0.9s">
-                    Welcome to Avel English
-                  </h2>
-                  <h2 class="title" style="--delay: 0.9s">
-                    Welcome to Avel English
-                  </h2>
-                  <h2 class="title" style="--delay: 0.9s">
-                    Welcome to Avel English
-                  </h2>
-                  <h2 class="title" style="--delay: 0.9s">
-                    Welcome to Avel English
-                  </h2>
-                </div>
-                <div class="slider__card_content-left--content">
-                  <p class="content active--content" style="--delay: 1.2s">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Tincidunt eu mauris leo ut fringilla faucibus sed gravida
-                    pretium. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Tincidunt eu mauris leo ut fringilla
-                    faucibus sed gravida pretium.
-                  </p>
-                  <p class="content" style="--delay: 1.2s">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Tincidunt eu mauris leo ut fringilla faucibus sed gravida
-                    pretium. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Tincidunt eu mauris leo ut fringilla
-                    faucibus sed gravida pretium.
-                  </p>
-                  <p class="content" style="--delay: 1.2s">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Tincidunt eu mauris leo ut fringilla faucibus sed gravida
-                    pretium. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Tincidunt eu mauris leo ut fringilla
-                    faucibus sed gravida pretium.
-                  </p>
-                  <p class="content" style="--delay: 1.2s">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Tincidunt eu mauris leo ut fringilla faucibus sed gravida
-                    pretium. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Tincidunt eu mauris leo ut fringilla
-                    faucibus sed gravida pretium.
-                  </p>
-                  <p class="content" style="--delay: 1.2s">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Tincidunt eu mauris leo ut fringilla faucibus sed gravida
-                    pretium. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Tincidunt eu mauris leo ut fringilla
-                    faucibus sed gravida pretium.
-                  </p>
-                </div>
-                <div class="slider__card_content-left--button">
-                  <div class="button active--button">Get Information</div>
-                  <div class="button">Get Information</div>
-                  <div class="button">Get Information</div>
-                  <div class="button">Get Information</div>
-                  <div class="button">Get Information</div>
-                </div>
-              </div>
-              <div class="slider__card_content-right col-md-5 offset-md-1">
-                <div class="slider__card_content-right--img">
-                  <img class="gallery-cell" src="img/img-slider-one.jpg" alt="img-slider-one" />
-                  <img class="gallery-cell" src="img/img-slider-one.jpg" alt="img-slider-one" />
-                  <img class="gallery-cell" src="img/img-slider-one.jpg" alt="img-slider-one" />
-                  <img class="gallery-cell" src="img/img-slider-one.jpg" alt="img-slider-one" />
-                  <img class="gallery-cell" src="img/img-slider-one.jpg" alt="img-slider-one" />
-                </div>
-              </div>
-              <div class="slider__card_content-control">
-                <div class="slider__card_content-control--prev">
-                  <img src="img/icon-arrow-left.svg" alt="arrow-left" />
-                </div>
-                <div class="slider__card_content-control--next">
-                  <img src="img/icon-arrow-right.svg" alt="arrow-right" />
-                </div>
-              </div>
+    </header>
+    <main>
+      <div class="scrolling-box">
+        <section id="slider" class="slider">
+          <div class="slider__card">
+            <div class="slider__card_img">
+              <img src="img/slider-background.jpg" alt="slider-background" />
             </div>
-            <div class="slider__card_bottom">
-              <div class="slider__card_bottom-page">
-                <div class="slider__card_bottom-page--number">01</div>
-                <div class="slider__card_bottom-page--dotted"></div>
-              </div>
-            </div>
-            <div class="slider__card_scroll">
-              <img src="img/icon-scroll.png" alt="icon-scroll" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="information" class="information">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 left col-12">
-              <div class="image">
-                <img src="assets/teacher.jpg" alt="" />
-              </div>
-              <img src="assets/icon/circle.svg" alt="vector" class="circle-right" />
-              <img src="assets/icon/circle-bot.svg" alt="vector" class="circle-left" />
-            </div>
-            <div class="offset-md-1"></div>
-            <div class="col-md-5 right col-12">
-              <h3 class="title-sub">Get acess to high quality learning</h3>
-              <h2 class="title">What do we do?</h2>
-              <p class="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus quaerat dolores, maxime, nulla cumque impedit
-                suscipit sunt, mollitia atque asperiores facere. Sunt eveniet
-                aliquam quis esse adipisci tenetur at pariatur.
-              </p>
-              <div class="row">
-                <div class="col-md-5">
-                  <div class="button">Register</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="studySettle" class="studySettle row" id="section">
-        <div class="content">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 left">
-                <div class="left-title">
-                  <h2 class="title">
-                    Study abroad <span style="font-size: 150px">&</span>
-                  </h2>
-                  <h2 class="title title-two">Settle down</h2>
-                </div>
-                <div class="paragraph">
-                  <p class="paragraph-text active-content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Accusamus quaerat dolores, maxime, nulla cumque impedit
-                    suscipit sunt, mollitia atque asperiores facere. Sunt
-                    eveniet aliquam quis esse adipisci tenetur at pariatur.
-                    Lorem ipsum dolor sit amet consectetur
-                  </p>
-                  <p class="paragraph-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Accusamus quaerat dolores, maxime, nulla cumque impedit
-                    suscipit sunt, mollitia atque asperiores facere. Sunt
-                    eveniet aliquam quis esse adipisci tenetur at pariatur.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Accusamus quaerat dolores, maxime, nulla cumque impedit
-                    suscipit sunt, mollitia atque asperiores facere. Sunt
-                    eveniet aliquam quis esse adipisci tenetur at pariatur.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Accusamus quaerat dolores, maxime, nulla cumque impedit
-                    suscipit sunt, mollitia atque asperiores facere.
-                  </p>
-                  <p class="paragraph-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Accusamus quaerat dolores, maxime, nulla cumque impedit
-                    suscipit sunt, mollitia atque asperiores facere. Sunt
-                    eveniet aliquam quis esse adipisci tenetur at pariatur.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Accusamus quaerat dolores, maxime, nulla cumque impedit
-                    suscipit sunt, mollitia atque asperiores facere. Sunt
-                    eveniet aliquam quis esse adipisci tenetur at pariatur.
-                  </p>
-                </div>
-                <div class="row">
-                  <div class="col-md-4 offset-md-8">
+            <div class="container">
+              <div class="slider__card_content row">
+                <div class="slider__card_content-left col-md-6">
+                  <div class="slider__card_content-left--subTitle">
+                    <h3
+                      class="title-sub active--title-sub"
+                      style="--delay: 0.6s"
+                    >
+                      Get started
+                    </h3>
+                    <h3 class="title-sub" style="--delay: 0.6s">Get started</h3>
+                    <h3 class="title-sub" style="--delay: 0.6s">Get started</h3>
+                    <h3 class="title-sub" style="--delay: 0.6s">Get started</h3>
+                    <h3 class="title-sub" style="--delay: 0.6s">Get started</h3>
+                  </div>
+                  <div class="slider__card_content-left--title">
+                    <h2 class="title active--title" style="--delay: 0.9s">
+                      Welcome to Avel English
+                    </h2>
+                    <h2 class="title" style="--delay: 0.9s">
+                      Welcome to Avel English
+                    </h2>
+                    <h2 class="title" style="--delay: 0.9s">
+                      Welcome to Avel English
+                    </h2>
+                    <h2 class="title" style="--delay: 0.9s">
+                      Welcome to Avel English
+                    </h2>
+                    <h2 class="title" style="--delay: 0.9s">
+                      Welcome to Avel English
+                    </h2>
+                  </div>
+                  <div class="slider__card_content-left--content">
+                    <p class="content active--content" style="--delay: 1.2s">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Tincidunt eu mauris leo ut fringilla faucibus sed gravida
+                      pretium. Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit. Tincidunt eu mauris leo ut fringilla
+                      faucibus sed gravida pretium.
+                    </p>
+                    <p class="content" style="--delay: 1.2s">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Tincidunt eu mauris leo ut fringilla faucibus sed gravida
+                      pretium. Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit. Tincidunt eu mauris leo ut fringilla
+                      faucibus sed gravida pretium.
+                    </p>
+                    <p class="content" style="--delay: 1.2s">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Tincidunt eu mauris leo ut fringilla faucibus sed gravida
+                      pretium. Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit. Tincidunt eu mauris leo ut fringilla
+                      faucibus sed gravida pretium.
+                    </p>
+                    <p class="content" style="--delay: 1.2s">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Tincidunt eu mauris leo ut fringilla faucibus sed gravida
+                      pretium. Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit. Tincidunt eu mauris leo ut fringilla
+                      faucibus sed gravida pretium.
+                    </p>
+                    <p class="content" style="--delay: 1.2s">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Tincidunt eu mauris leo ut fringilla faucibus sed gravida
+                      pretium. Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit. Tincidunt eu mauris leo ut fringilla
+                      faucibus sed gravida pretium.
+                    </p>
+                  </div>
+                  <div class="slider__card_content-left--button">
+                    <div class="button active--button">Get Information</div>
+                    <div class="button">Get Information</div>
+                    <div class="button">Get Information</div>
+                    <div class="button">Get Information</div>
                     <div class="button">Get Information</div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right carousel slider">
-                  <div class="carousel-cell slider_child">
-                    <div class="image">
-                      <img data-flickity-lazyload="assets/settle.png" alt="settle" />
-                      <div class="name">England</div>
-                    </div>
+                <div class="slider__card_content-right col-md-5 offset-md-1">
+                  <div class="slider__card_content-right--img">
+                    <img
+                      class="gallery-cell"
+                      src="img/img-slider-one.jpg"
+                      alt="img-slider-one"
+                    />
+                    <img
+                      class="gallery-cell"
+                      src="img/img-slider-one.jpg"
+                      alt="img-slider-one"
+                    />
+                    <img
+                      class="gallery-cell"
+                      src="img/img-slider-one.jpg"
+                      alt="img-slider-one"
+                    />
+                    <img
+                      class="gallery-cell"
+                      src="img/img-slider-one.jpg"
+                      alt="img-slider-one"
+                    />
+                    <img
+                      class="gallery-cell"
+                      src="img/img-slider-one.jpg"
+                      alt="img-slider-one"
+                    />
                   </div>
-                  <div class="carousel-cell slider_child">
-                    <div class="image">
-                      <img data-flickity-lazyload="assets/american.jpg" alt="settle" />
-                      <div class="name">American</div>
-                    </div>
+                </div>
+                <div class="slider__card_content-control">
+                  <div class="slider__card_content-control--prev">
+                    <img src="img/icon-arrow-left.svg" alt="arrow-left" />
                   </div>
-                  <div class="carousel-cell slider_child">
-                    <div class="image">
-                      <img data-flickity-lazyload="assets/france.jpg" alt="settle" />
-                      <div class="name">France</div>
-                    </div>
+                  <div class="slider__card_content-control--next">
+                    <img src="img/icon-arrow-right.svg" alt="arrow-right" />
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="background-v1"></div>
-        <div class="background-v2"></div>
-        <div class="background-circle"></div>
-      </section>
-      <section id="course" class="course right-to-left">
-        <div class="container course__title">Course</div>
-        <div class="container course__item">
-          <div class="course__item_img">
-            <img src="img/course-banner.jpg" alt="course-banner" />
-            <img src="img/course-banner.jpg" alt="course-banner" />
-            <img src="img/course-banner.jpg" alt="course-banner" />
-          </div>
-          <div class="course__item_content">
-            <div class="course__item_content-titleSub">
-              <div class="title-sub active--title-sub" style="--delay: 0.6s">
-                Trending Course
-              </div>
-              <div class="title-sub" style="--delay: 0.6s">
-                Trending Course
-              </div>
-              <div class="title-sub" style="--delay: 0.6s">
-                Trending Course
-              </div>
-            </div>
-            <div class="course__item_content-title">
-              <div class="title active--title" style="--delay: 0.9s">
-                IIC Foundation
-              </div>
-              <div class="title" style="--delay: 0.9s">IIC Foundation</div>
-              <div class="title" style="--delay: 0.9s">IIC Foundation</div>
-            </div>
-            <div class="course__item_content-content">
-              <div class="content active--content" style="--delay: 1.2s">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis faucibus diam lectus ac faucibus mattis amet. Nibh
-                tempor facilisi urna, viverra phasellus cras pulvinar proin
-                porta. Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Facilisis faucibus diam lectus ac faucibus mattis amet.
-              </div>
-              <div class="content" style="--delay: 1.2s">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis faucibus diam lectus ac faucibus mattis amet. Nibh
-                tempor facilisi urna, viverra phasellus cras pulvinar proin
-                porta.
-              </div>
-              <div class="content" style="--delay: 1.2s">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Facilisis faucibus diam lectus ac faucibus mattis amet. Nibh
-                tempor facilisi urna, viverra phasellus cras pulvinar proin
-                porta. Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Facilisis faucibus diam lectus ac faucibus mattis amet.
-              </div>
-            </div>
-            <div class="course__item_content-button">
-              <div class="button active--button" style="--delay: 1.5s">
-                Register
-              </div>
-              <div class="button" style="--delay: 1.5s">Register</div>
-              <div class="button" style="--delay: 1.5s">Register</div>
-            </div>
-          </div>
-          <div style="width: 7%"></div>
-        </div>
-        <div class="course__bottom">
-          <div class="course__bottom_scrollBar">
-            <div class="course__bottom_scrollBar-progressBar"></div>
-          </div>
-        </div>
-        <div class="course__control">
-          <div class="course__control_prev">
-            <img src="img/icon-left.svg" alt="icon-left" />
-          </div>
-          <div class="course__control_next">
-            <img src="img/icon-right.svg" alt="icon-right" />
-          </div>
-        </div>
-      </section>
-      <section id="aboutUs" class="aboutUs">
-        <div class="container" style="height: 100%">
-          <div class="content">
-            <div class="row" style="height: 100%">
-              <div class="col-md-7">
-                <h3 class="title-sub">introduce</h3>
-                <h2 class="title">About Us</h2>
-              </div>
-              <div class="col-md-5">
-                <div class="carousel slider">
-                  <div class="image carousel-cell">
-                    <img src="assets/jw.jpeg" alt="" />
-                  </div>
-                  <div class="image carousel-cell">
-                    <img src="assets/jw.jpeg" alt="" />
-                  </div>
-                  <div class="image carousel-cell">
-                    <img src="assets/jw.jpeg" alt="" />
-                  </div>
+              <div class="slider__card_bottom">
+                <div class="slider__card_bottom-page">
+                  <div class="slider__card_bottom-page--number">01</div>
+                  <div class="slider__card_bottom-page--dotted"></div>
                 </div>
               </div>
+              <div class="slider__card_scroll">
+                <img src="img/icon-scroll.png" alt="icon-scroll" />
+              </div>
             </div>
+          </div>
+        </section>
+        <section id="information" class="information">
+          <div class="container">
             <div class="row">
-              <div class="paragraph col-md-8">
-                <div class="paragraph-name">John Wick</div>
-                <div class="paragraph-sub">Teacher Ielts Foundation</div>
-                <div class="paragraph-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad
-                  consequatur aspernatur dolorem earum natus voluptatum
-                  eveniet quibusdam deserunt quam ipsa minus repellat commodi
-                  dolorum porro, sequi iure at enim dolor ullam iusto animi
-                  eum quasi sit debitis! Officia laboriosam beatae velit
-                  adipisci quis itaque, veniam recusandae, exercitationem
-                  voluptate perspiciatis sunt.
+              <div class="col-md-6 left col-12">
+                <div class="image">
+                  <img src="assets/teacher.jpg" alt="" />
                 </div>
-                <div class="social">
-                  <div class="icon">
-                    <img src="assets/icon/icon-fb.svg" alt="" />
-                  </div>
-                  <div class="icon">
-                    <img src="assets/icon/icon-ins.svg" alt="" />
-                  </div>
-                  <div class="icon">
-                    <img src="assets/icon/icon-twister.svg" alt="" />
+                <img
+                  src="assets/icon/circle.svg"
+                  alt="vector"
+                  class="circle-right"
+                />
+                <img
+                  src="assets/icon/circle-bot.svg"
+                  alt="vector"
+                  class="circle-left"
+                />
+              </div>
+              <div class="offset-md-1"></div>
+              <div class="col-md-5 right col-12">
+                <h3 class="title-sub">Get acess to high quality learning</h3>
+                <h2 class="title">What do we do?</h2>
+                <p class="content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus quaerat dolores, maxime, nulla cumque impedit
+                  suscipit sunt, mollitia atque asperiores facere. Sunt eveniet
+                  aliquam quis esse adipisci tenetur at pariatur.
+                </p>
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="button">Register</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="feedback" class="feedback">
-        <div class="feedback__backgroundOrange"></div>
-        <div class="container">
-          <div class="feedback__title">
-            <div class="title-sub">Student</div>
-            <div class="feedback__title_label">Feedback</div>
-          </div>
-          <div class="feedback__content">
-            <div class="feedback__content_list">
-              <div class="feedback__content_list-item">
-                <div class="feedback__content_list-item--avatarName">
-                  <div class="avatar">
-                    <img />
+        </section>
+        <section id="studySettle" class="studySettle row" id="section">
+          <div class="content">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 left">
+                  <div class="left-title">
+                    <h2 class="title">
+                      Study abroad <span style="font-size: 150px">&</span>
+                    </h2>
+                    <h2 class="title title-two">Settle down</h2>
                   </div>
-                  <div class="name">Linh Duy Linh</div>
+                  <div class="paragraph">
+                    <p class="paragraph-text active-content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Accusamus quaerat dolores, maxime, nulla cumque impedit
+                      suscipit sunt, mollitia atque asperiores facere. Sunt
+                      eveniet aliquam quis esse adipisci tenetur at pariatur.
+                      Lorem ipsum dolor sit amet consectetur
+                    </p>
+                    <p class="paragraph-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Accusamus quaerat dolores, maxime, nulla cumque impedit
+                      suscipit sunt, mollitia atque asperiores facere. Sunt
+                      eveniet aliquam quis esse adipisci tenetur at pariatur.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Accusamus quaerat dolores, maxime, nulla cumque impedit
+                      suscipit sunt, mollitia atque asperiores facere. Sunt
+                      eveniet aliquam quis esse adipisci tenetur at pariatur.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Accusamus quaerat dolores, maxime, nulla cumque impedit
+                      suscipit sunt, mollitia atque asperiores facere.
+                    </p>
+                    <p class="paragraph-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Accusamus quaerat dolores, maxime, nulla cumque impedit
+                      suscipit sunt, mollitia atque asperiores facere. Sunt
+                      eveniet aliquam quis esse adipisci tenetur at pariatur.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Accusamus quaerat dolores, maxime, nulla cumque impedit
+                      suscipit sunt, mollitia atque asperiores facere. Sunt
+                      eveniet aliquam quis esse adipisci tenetur at pariatur.
+                    </p>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 offset-md-8">
+                      <div class="button">Get Information</div>
+                    </div>
+                  </div>
                 </div>
-                <div class="feedback__content_list-item--rating">
-                  <img />
-                  <img />
-                  <img />
-                  <img />
-                  <img />
-                </div>
-                <div class="feedback__content_list-item--text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
-                  ac, in lectus sit urna. Lectus quis fusce cursus amet varius
-                  aliquam duis. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Sit ac, in lectus sit urna. Lectus quis
-                  fusce cursus amet varius aliquam duis.
-                </div>
-                <div class="feedback__content_list-item--day">
-                  20/09/2000
+                <div class="col-md-6">
+                  <div class="right carousel slider">
+                    <div class="carousel-cell slider_child">
+                      <div class="image">
+                        <img
+                          data-flickity-lazyload="assets/settle.png"
+                          alt="settle"
+                        />
+                        <div class="name">England</div>
+                      </div>
+                    </div>
+                    <div class="carousel-cell slider_child">
+                      <div class="image">
+                        <img
+                          data-flickity-lazyload="assets/american.jpg"
+                          alt="settle"
+                        />
+                        <div class="name">American</div>
+                      </div>
+                    </div>
+                    <div class="carousel-cell slider_child">
+                      <div class="image">
+                        <img
+                          data-flickity-lazyload="assets/france.jpg"
+                          alt="settle"
+                        />
+                        <div class="name">France</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="background-v1"></div>
+          <div class="background-v2"></div>
+          <div class="background-circle"></div>
+        </section>
+        <section id="course" class="course right-to-left">
+          <div class="container course__title">Course</div>
+          <div class="container course__item">
+            <div class="course__item_img">
+              <img src="img/course-banner.jpg" alt="course-banner" />
+              <img src="img/course-banner.jpg" alt="course-banner" />
+              <img src="img/course-banner.jpg" alt="course-banner" />
+            </div>
+            <div class="course__item_content">
+              <div class="course__item_content-titleSub">
+                <div class="title-sub active--title-sub" style="--delay: 0.6s">
+                  Trending Course
+                </div>
+                <div class="title-sub" style="--delay: 0.6s">
+                  Trending Course
+                </div>
+                <div class="title-sub" style="--delay: 0.6s">
+                  Trending Course
+                </div>
+              </div>
+              <div class="course__item_content-title">
+                <div class="title active--title" style="--delay: 0.9s">
+                  IIC Foundation
+                </div>
+                <div class="title" style="--delay: 0.9s">IIC Foundation</div>
+                <div class="title" style="--delay: 0.9s">IIC Foundation</div>
+              </div>
+              <div class="course__item_content-content">
+                <div class="content active--content" style="--delay: 1.2s">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Facilisis faucibus diam lectus ac faucibus mattis amet. Nibh
+                  tempor facilisi urna, viverra phasellus cras pulvinar proin
+                  porta. Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Facilisis faucibus diam lectus ac faucibus mattis amet.
+                </div>
+                <div class="content" style="--delay: 1.2s">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Facilisis faucibus diam lectus ac faucibus mattis amet. Nibh
+                  tempor facilisi urna, viverra phasellus cras pulvinar proin
+                  porta.
+                </div>
+                <div class="content" style="--delay: 1.2s">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Facilisis faucibus diam lectus ac faucibus mattis amet. Nibh
+                  tempor facilisi urna, viverra phasellus cras pulvinar proin
+                  porta. Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Facilisis faucibus diam lectus ac faucibus mattis amet.
+                </div>
+              </div>
+              <div class="course__item_content-button">
+                <div class="button active--button" style="--delay: 1.5s">
+                  Register
+                </div>
+                <div class="button" style="--delay: 1.5s">Register</div>
+                <div class="button" style="--delay: 1.5s">Register</div>
+              </div>
+            </div>
+            <div style="width: 7%"></div>
+          </div>
+          <div class="course__bottom">
+            <div class="course__bottom_scrollBar">
+              <div class="course__bottom_scrollBar-progressBar"></div>
+            </div>
+          </div>
+          <div class="course__control">
+            <div class="course__control_prev">
+              <img src="img/icon-left.svg" alt="icon-left" />
+            </div>
+            <div class="course__control_next">
+              <img src="img/icon-right.svg" alt="icon-right" />
+            </div>
+          </div>
+        </section>
+        <section id="aboutUs" class="aboutUs">
+          <div class="container" style="height: 100%">
+            <div class="content">
+              <div class="row" style="height: 100%">
+                <div class="col-md-7">
+                  <h3 class="title-sub">introduce</h3>
+                  <h2 class="title">About Us</h2>
+                </div>
+                <div class="col-md-5">
+                  <div class="carousel slider">
+                    <div class="image carousel-cell">
+                      <img src="assets/jw.jpeg" alt="" />
+                    </div>
+                    <div class="image carousel-cell">
+                      <img src="assets/jw.jpeg" alt="" />
+                    </div>
+                    <div class="image carousel-cell">
+                      <img src="assets/jw.jpeg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="paragraph col-md-8">
+                  <div class="paragraph-name">John Wick</div>
+                  <div class="paragraph-sub">Teacher Ielts Foundation</div>
+                  <div class="paragraph-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad
+                    consequatur aspernatur dolorem earum natus voluptatum
+                    eveniet quibusdam deserunt quam ipsa minus repellat commodi
+                    dolorum porro, sequi iure at enim dolor ullam iusto animi
+                    eum quasi sit debitis! Officia laboriosam beatae velit
+                    adipisci quis itaque, veniam recusandae, exercitationem
+                    voluptate perspiciatis sunt.
+                  </div>
+                  <div class="social">
+                    <div class="icon">
+                      <img src="assets/icon/icon-fb.svg" alt="" />
+                    </div>
+                    <div class="icon">
+                      <img src="assets/icon/icon-ins.svg" alt="" />
+                    </div>
+                    <div class="icon">
+                      <img src="assets/icon/icon-twister.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="feedback" class="feedback">
+          <div class="feedback__backgroundOrange"></div>
+          <div class="container">
+            <div class="feedback__title">
+              <div class="title-sub">Student</div>
+              <div class="feedback__title_label title">Feedback</div>
+            </div>
+            <div class="feedback__content">
+              <div class="feedback__content_list">
+                <div class="feedback__content_list-item">
+                  <div class="feedback__content_list-item--avatarName">
+                    <div class="avatar">
+                      <img src="img/avatar.jpg" alt="avatar" />
+                    </div>
+                    <div class="name">Linh Duy Linh</div>
+                  </div>
+                  <div class="feedback__content_list-item--rating">
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                  </div>
+                  <div class="feedback__content_list-item--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Tellus cursus egestas nunc eros sagittis elit ut sagittis
+                    mattis. Diam urna accumsan, neque blandit.
+                  </div>
+                  <div class="feedback__content_list-item--day">20/09/2000</div>
+                </div>
+                <div class="feedback__content_list-item">
+                  <div class="feedback__content_list-item--avatarName">
+                    <div class="avatar">
+                      <img src="img/avatar.jpg" alt="avatar" />
+                    </div>
+                    <div class="name">Linh Duy Linh</div>
+                  </div>
+                  <div class="feedback__content_list-item--rating">
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                  </div>
+                  <div class="feedback__content_list-item--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Tellus cursus egestas nunc eros sagittis elit ut sagittis
+                    mattis. Diam urna accumsan, neque blandit.
+                  </div>
+                  <div class="feedback__content_list-item--day">20/09/2000</div>
+                </div>
+                <div class="feedback__content_list-item">
+                  <div class="feedback__content_list-item--avatarName">
+                    <div class="avatar">
+                      <img src="img/avatar.jpg" alt="avatar" />
+                    </div>
+                    <div class="name">Linh Duy Linh</div>
+                  </div>
+                  <div class="feedback__content_list-item--rating">
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                  </div>
+                  <div class="feedback__content_list-item--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Tellus cursus egestas nunc eros sagittis elit ut sagittis
+                    mattis. Diam urna accumsan, neque blandit.
+                  </div>
+                  <div class="feedback__content_list-item--day">20/09/2000</div>
+                </div>
+                <div class="feedback__content_list-item">
+                  <div class="feedback__content_list-item--avatarName">
+                    <div class="avatar">
+                      <img src="img/avatar.jpg" alt="avatar" />
+                    </div>
+                    <div class="name">Linh Duy Linh</div>
+                  </div>
+                  <div class="feedback__content_list-item--rating">
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                  </div>
+                  <div class="feedback__content_list-item--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Tellus cursus egestas nunc eros sagittis elit ut sagittis
+                    mattis. Diam urna accumsan, neque blandit.
+                  </div>
+                  <div class="feedback__content_list-item--day">20/09/2000</div>
+                </div>
+                <div class="feedback__content_list-item">
+                  <div class="feedback__content_list-item--avatarName">
+                    <div class="avatar">
+                      <img src="img/avatar.jpg" alt="avatar" />
+                    </div>
+                    <div class="name">Linh Duy Linh</div>
+                  </div>
+                  <div class="feedback__content_list-item--rating">
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                    <img src="img/icon-star.svg" alt="icon-star" />
+                  </div>
+                  <div class="feedback__content_list-item--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Tellus cursus egestas nunc eros sagittis elit ut sagittis
+                    mattis. Diam urna accumsan, neque blandit.
+                  </div>
+                  <div class="feedback__content_list-item--day">20/09/2000</div>
+                </div>
+              </div>
+            </div>
+            <div style="width: 10%"></div>
+          </div>
+        </section>
+        <section id="family" class="family">
+          <div class="container family__title">We are family</div>
+          <div class="family__img">
+            <div class="family__img_list" itemscope data-pswp-uid="1">
+              <figure class="family__img_list-item">
+                <a href="img/family_one.jpg" data-size="800x500">
+                  <img src="img/family_one.jpg" alt="gallery-img" />
+                </a>
+                <div class="family__img_list-item--opacity"></div>
+                <div
+                  class="family__img_list-item--content"
+                  style="--delay: 0.4s"
+                >
+                  <div class="name" style="--delay: 0.7s">
+                    Camping <br />
+                    Summer 2022
+                  </div>
+                  <div class="button" style="--delay: 1s">View more</div>
+                </div>
+              </figure>
+              <figure class="family__img_list-item">
+                <a href="img/family_two.jpg" data-size="800x500">
+                  <img src="img/family_two.jpg" alt="gallery-img" />
+                </a>
+                <div class="family__img_list-item--opacity"></div>
+                <div
+                  class="family__img_list-item--content"
+                  style="--delay: 0.4s"
+                >
+                  <div class="name" style="--delay: 0.7s">
+                    Camping <br />
+                    Summer 2022
+                  </div>
+                  <div class="button" style="--delay: 1s">View more</div>
+                </div>
+              </figure>
+              <figure class="family__img_list-item">
+                <a href="img/family_three.jpg" data-size="800x500">
+                  <img src="img/family_three.jpg" alt="gallery-img" />
+                </a>
+                <div class="family__img_list-item--opacity"></div>
+                <div
+                  class="family__img_list-item--content"
+                  style="--delay: 0.4s"
+                >
+                  <div class="name" style="--delay: 0.7s">
+                    Camping <br />
+                    Summer 2022
+                  </div>
+                  <div class="button" style="--delay: 1s">View more</div>
+                </div>
+              </figure>
+              <figure class="family__img_list-item">
+                <a href="img/family_four.jpg" data-size="800x500">
+                  <img src="img/family_four.jpg" alt="gallery-img" />
+                </a>
+                <div class="family__img_list-item--opacity"></div>
+                <div
+                  class="family__img_list-item--content"
+                  style="--delay: 0.4s"
+                >
+                  <div class="name" style="--delay: 0.7s">
+                    Camping <br />
+                    Summer 2022
+                  </div>
+                  <div class="button" style="--delay: 1s">View more</div>
+                </div>
+              </figure>
+              <figure class="family__img_list-item">
+                <a href="img/family_five.jpg" data-size="800x500">
+                  <img src="img/family_five.jpg" alt="gallery-img" />
+                </a>
+                <div class="family__img_list-item--opacity"></div>
+                <div
+                  class="family__img_list-item--content"
+                  style="--delay: 0.4s"
+                >
+                  <div class="name" style="--delay: 0.7s">
+                    Camping <br />
+                    Summer 2022
+                  </div>
+                  <div class="button" style="--delay: 1s">View more</div>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="contact left-to-right">
+          <div class="container contact__title">Contact</div>
+          <div class="container contact__content">
+            <div class="contact__content_form">
+              <div class="contact__content_form-item">
+                <input type="text" placeholder="Name" />
+                <!-- <label>Name</label> -->
+              </div>
+              <div class="contact__content_form-item">
+                <input type="tel" placeholder="Phone" />
+                <!-- <label>Phone</label> -->
+              </div>
+              <div class="contact__content_form-item">
+                <input type="email" placeholder="Email" />
+                <!-- <label>Email</label> -->
+              </div>
+              <div class="contact__content_form-item">
+                <input type="text" placeholder="Address" />
+                <!-- <label>Address</label> -->
+              </div>
+              <div class="contact__content_form-item">
+                <textarea placeholder="Note"></textarea>
+                <!-- <label>Note</label> -->
+              </div>
+              <div class="button">Submit</div>
+            </div>
+            <div class="contact__content_img">
+              <img src="img/banner-contact.jpg" alt="background-img" />
             </div>
           </div>
           <div style="width: 10%"></div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container footer">
+        <div class="footer_logo">
+          <a href="#">
+            <img src="img/avel-logo.png" alt="avel-logo" />
+          </a>
         </div>
-      </section>
-      <section id="family" class="family">
-        <div class="container family__title">We are family</div>
-        <div class="family__img">
-          <div class="family__img_list" itemscope data-pswp-uid="1">
-            <figure class="family__img_list-item">
-              <a href="img/family_one.jpg" data-size="800x500">
-                <img src="img/family_one.jpg" alt="gallery-img" />
-              </a>
-              <div class="family__img_list-item--opacity"></div>
-              <div class="family__img_list-item--content" style="--delay: 0.4s">
-                <div class="name" style="--delay: 0.7s">
-                  Camping <br />
-                  Summer 2022
-                </div>
-                <div class="button" style="--delay: 1s">View more</div>
-              </div>
-            </figure>
-            <figure class="family__img_list-item">
-              <a href="img/family_two.jpg" data-size="800x500">
-                <img src="img/family_two.jpg" alt="gallery-img" />
-              </a>
-              <div class="family__img_list-item--opacity"></div>
-              <div class="family__img_list-item--content" style="--delay: 0.4s">
-                <div class="name" style="--delay: 0.7s">
-                  Camping <br />
-                  Summer 2022
-                </div>
-                <div class="button" style="--delay: 1s">View more</div>
-              </div>
-            </figure>
-            <figure class="family__img_list-item">
-              <a href="img/family_three.jpg" data-size="800x500">
-                <img src="img/family_three.jpg" alt="gallery-img" />
-              </a>
-              <div class="family__img_list-item--opacity"></div>
-              <div class="family__img_list-item--content" style="--delay: 0.4s">
-                <div class="name" style="--delay: 0.7s">
-                  Camping <br />
-                  Summer 2022
-                </div>
-                <div class="button" style="--delay: 1s">View more</div>
-              </div>
-            </figure>
-            <figure class="family__img_list-item">
-              <a href="img/family_four.jpg" data-size="800x500">
-                <img src="img/family_four.jpg" alt="gallery-img" />
-              </a>
-              <div class="family__img_list-item--opacity"></div>
-              <div class="family__img_list-item--content" style="--delay: 0.4s">
-                <div class="name" style="--delay: 0.7s">
-                  Camping <br />
-                  Summer 2022
-                </div>
-                <div class="button" style="--delay: 1s">View more</div>
-              </div>
-            </figure>
-            <figure class="family__img_list-item">
-              <a href="img/family_five.jpg" data-size="800x500">
-                <img src="img/family_five.jpg" alt="gallery-img" />
-              </a>
-              <div class="family__img_list-item--opacity"></div>
-              <div class="family__img_list-item--content" style="--delay: 0.4s">
-                <div class="name" style="--delay: 0.7s">
-                  Camping <br />
-                  Summer 2022
-                </div>
-                <div class="button" style="--delay: 1s">View more</div>
-              </div>
-            </figure>
+        <div class="footer_address">
+          Address: 24, Đặng Thai Mai, Phường 7, Quận Phú Nhuận, Thành phố Hồ Chí
+          Minh
+        </div>
+        <div class="footer_phone">Phone: 0344.152.125</div>
+        <div class="footer_social">
+          <div class="footer_social-item">
+            <a href="#"
+              ><img src="img/icon-facebook.svg" alt="icon-facebook"
+            /></a>
+          </div>
+          <div class="footer_social-item">
+            <a href="#"
+              ><img src="img/icon-instagram.svg" alt="icon-facebook"
+            /></a>
+          </div>
+          <div class="footer_social-item">
+            <a href="#"
+              ><img src="img/icon-facebook.svg" alt="icon-facebook"
+            /></a>
           </div>
         </div>
-      </section>
-      <section id="contact" class="contact left-to-right">
-        <div class="container contact__title">Contact</div>
-        <div class="container contact__content">
-          <div class="contact__content_form">
-            <div class="contact__content_form-item">
-              <input type="text" placeholder="Name" />
-              <!-- <label>Name</label> -->
-            </div>
-            <div class="contact__content_form-item">
-              <input type="tel" placeholder="Phone" />
-              <!-- <label>Phone</label> -->
-            </div>
-            <div class="contact__content_form-item">
-              <input type="email" placeholder="Email" />
-              <!-- <label>Email</label> -->
-            </div>
-            <div class="contact__content_form-item">
-              <input type="text" placeholder="Address" />
-              <!-- <label>Address</label> -->
-            </div>
-            <div class="contact__content_form-item">
-              <textarea placeholder="Note"></textarea>
-              <!-- <label>Note</label> -->
-            </div>
-            <div class="button">Submit</div>
-          </div>
-          <div class="contact__content_img">
-            <img src="img/banner-contact.jpg" alt="background-img" />
+        <div class="footer_back">
+          <div class="footer_back-backTop">
+            <img src="assets/icon/backtop.svg" alt="arrow" />
+            <p>Back to top</p>
           </div>
         </div>
-        <div style="width: 10%"></div>
-      </section>
+      </div>
+    </footer>
 
-    </div>
-  </main>
-  <footer>
-    <div class="container footer">
-      <div class="footer_logo">
-        <a href="#">
-          <img src="img/avel-logo.png" alt="avel-logo" />
-        </a>
-      </div>
-      <div class="footer_address">
-        Address: 24, Đặng Thai Mai, Phường 7, Quận Phú Nhuận, Thành phố Hồ Chí
-        Minh
-      </div>
-      <div class="footer_phone">Phone: 0344.152.125</div>
-      <div class="footer_social">
-        <div class="footer_social-item">
-          <a href="#"><img src="img/icon-facebook.svg" alt="icon-facebook" /></a>
-        </div>
-        <div class="footer_social-item">
-          <a href="#"><img src="img/icon-instagram.svg" alt="icon-facebook" /></a>
-        </div>
-        <div class="footer_social-item">
-          <a href="#"><img src="img/icon-facebook.svg" alt="icon-facebook" /></a>
-        </div>
-      </div>
-      <div class="footer_back">
-        <div class="footer_back-backTop">
-          <img src="assets/icon/backtop.svg" alt="arrow" />
-          <p>Back to top</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script type="text/javascript" src="dest/jsmain.min.js"></script>
-  <script type="text/javascript" src="dest/main-page.js"></script>
-</body>
-
+    <script type="text/javascript" src="dest/jsmain.min.js"></script>
+    <script type="text/javascript" src="dest/main-page.js"></script>
+  </body>
 </html>
