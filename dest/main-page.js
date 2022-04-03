@@ -257,7 +257,7 @@ scrollToElement();
 // initPhotoSwipeFromDOM(".family__img_list");
 //-----------------------------------------------------------feedback-------------------------------------------------------
 $(".feedback__content_list").flickity({
-  cellAlign: "left",
+  cellAlign: "center",
   wrapAround: true,
   contain: true,
   draggable: true,
@@ -268,4 +268,12 @@ $(".feedback__content_list").flickity({
     ready: function () {},
     change: function (index) {},
   },
+});
+
+$(".feedback__control_prev").on("click", function () {
+  $(".feedback__content_list").flickity("previous");
+});
+
+$(".feedback__control_next").on("click", function () {
+  $(".feedback__content_list").flickity("next");
 });
