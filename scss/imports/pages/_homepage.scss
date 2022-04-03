@@ -114,7 +114,7 @@
         z-index: 10;
         &--prev,
         &--next {
-          cursor: pointer;
+          // cursor: pointer;
           opacity: 0.3;
           img {
             width: 25px;
@@ -204,7 +204,7 @@ body {
           position: relative;
           z-index: 2;
           transition: $t;
-          cursor: pointer;
+          // cursor: pointer;
           img {
             @include midimg(606px);
           }
@@ -599,7 +599,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      cursor: pointer;
+      // cursor: pointer;
       img {
         width: 30px;
       }

@@ -1,7 +1,7 @@
 //-----------------------------------cursor--------------------------------------------------
 let cursor = document.querySelector(".cursor");
 document.addEventListener("mousemove", (e) => {
-  console.log(e.pageY, e.pageX);
+  // console.log(e.pageY, e.pageX);
   cursor.setAttribute(
     "style",
     "top: " + (e.pageY - 15) + "px; left:" + (e.pageX - 15) + "px;"
@@ -10,18 +10,15 @@ document.addEventListener("mousemove", (e) => {
 
 //----------------------------------------------------------------------------------------
 $(".studySettle .carousel").flickity({
-  // options
   cellAlign: "left",
   contain: true,
   draggable: true,
-  // selectedAttraction: 0.01,
-  // friction: 0.15,
   imagesLoaded: true,
   lazyLoad: 2,
   prevNextButtons: false,
   pageDots: false,
   on: {
-    ready: function (index) {},
+    ready: function (index) { },
     change: function (index) {
       let content = $(".paragraph-text");
       console.log(content);
@@ -31,17 +28,14 @@ $(".studySettle .carousel").flickity({
   },
 });
 $(".aboutUs .carousel").flickity({
-  // options
   cellAlign: "left",
   contain: true,
   draggable: true,
-  // selectedAttraction: 0.01,
-  // friction: 0.15,
   imagesLoaded: true,
   lazyLoad: true,
   pageDots: false,
   on: {
-    ready: function (index) {},
+    ready: function (index) { },
     change: function (index) {
       // let content = $('.paragraph-text');
       // console.log(content);
@@ -140,14 +134,26 @@ window.addEventListener("scroll", function () {
   } else {
     header.removeClass("active");
   }
-  console.log("====================================");
-  console.log(heightScroll / this.window.innerHeight);
-  console.log("====================================");
+
   if (heightScroll / this.window.innerHeight >= 0.99) {
     menu.addClass("backMenu");
   } else {
     menu.removeClass("backMenu");
   }
+  console.log("====================================");
+  console.log($("header .container .menu li a"));
+  console.log("====================================");
+  if (heightScroll < this.window.innerHeight * 3 - 20) {
+    $("header .container .menu li a").removeClass('active-menu');
+    $("header .container .menu .homeMenu").addClass('active-menu');
+  } else if (heightScroll < this.window.innerHeight * 4) {
+    $("header .container .menu li a").removeClass('active-menu');
+    $("header .container .menu .courseMenu").addClass('active-menu');
+  } else if (heightScroll < this.window.innerHeight * 5) {
+    $("header .container .menu li a").removeClass('active-menu');
+    $("header .container .menu .aboutUsMenu").addClass('active-menu');
+  }
+  // if(heightScroll )
 });
 //------------------------------------------------scroll to top ------------------------------------------------------
 $(".footer_back").on("click", function () {
@@ -169,7 +175,7 @@ $(".course__item_img").flickity({
   prevNextButtons: false,
   pageDots: false,
   on: {
-    ready: function () {},
+    ready: function () { },
     change: function (index) {
       //sub title
       let subTitle = $(".course__item_content-titleSub .title-sub");
