@@ -269,29 +269,136 @@
         position: absolute;
         top: 0;
         left: 0;
+        z-index: 1;
     }
     .container {
         height: 100%;
+        z-index: 10;
+        position: relative;
+    }
+    &__control {
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_prev,
+        &_next {
+            img {
+                width: 15px;
+            }
+        }
+        &_prev {
+            margin-left: -55px;
+        }
+        &_next {
+            margin-right: -55px;
+        }
     }
     &__title {
         width: 100%;
-        height: 20%;
+        height: 25%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         justify-content: flex-end;
-        .title-sub{
+        padding-bottom: 20px;
+        .title-sub {
             color: $white-cl;
-            &::before{
+            &::before {
                 background-color: $white-cl;
             }
         }
         &_label {
-            @include text(70px, AV, 96px, $white-cl, none);
-            z-index: 10;
+            color: $white-cl !important;
         }
     }
     &__content {
-        height: 80%;
+        width: 100%;
+        height: 65%;
+        &_list {
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            &-item {
+                width: 33%;
+                height: 80%;
+                background: $white-cl;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+                padding: 30px;
+                // &.is-selected{
+                //     width: 50%;
+                //     height: 95%;
+                //     padding: 40px;
+                //     .feedback__content_list-item--avatarName{
+                //         .avatar{
+                //             width: 87px;
+                //             height: 87px;
+                //         }
+                //         .name{
+                //             font-size: 50px;
+                //         }
+                //     }
+                //     .feedback__content_list-item--rating{
+                //         img{
+                //             width: 30px;
+                //             height: 30px;
+                //         }
+                //     }
+                //     .feedback__content_list-item--text,  .feedback__content_list-item--day{
+                //         font-size: 25px;
+                //     }
+                // }
+                &--avatarName {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    .avatar {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        position: relative;
+                        overflow: hidden;
+                        img {
+                            @include midimg(initial);
+                        }
+                    }
+                    .name {
+                        padding-left: 20px;
+                        @include text(25px, AV, 34px, $black-cl, none);
+                        letter-spacing: -0.03em;
+                    }
+                }
+                &--rating {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 10px 0;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 5px;
+                    }
+                }
+                &--text {
+                    height: 150px;
+                    width: 100%;
+                    padding-bottom: 10px;
+                    @include text(18px, EB, 28px, $black-cl, none);
+                }
+                &--day {
+                    width: 100%;
+                    text-align: right;
+                    @include text(18px, EB, 28px, $black-cl, none);
+                }
+            }
+        }
     }
 }

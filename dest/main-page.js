@@ -84,7 +84,7 @@ $(".studySettle .carousel").flickity({
   prevNextButtons: false,
   pageDots: false,
   on: {
-    ready: function (index) { },
+    ready: function (index) {},
     change: function (index) {
       let content = $(".paragraph-text");
       console.log(content);
@@ -101,7 +101,7 @@ $(".aboutUs .carousel").flickity({
   lazyLoad: true,
   pageDots: false,
   on: {
-    ready: function (index) { },
+    ready: function (index) {},
     change: function (index) {
       // let content = $('.paragraph-text');
       // console.log(content);
@@ -210,11 +210,11 @@ window.addEventListener("scroll", function () {
   console.log($("header .container .menu li a"));
   console.log("====================================");
   if (heightScroll < this.window.innerHeight * 3 - 20) {
-    $("header .container .menu li a").removeClass('active-menu');
-    $("header .container .menu .homeMenu").addClass('active-menu');
+    $("header .container .menu li a").removeClass("active-menu");
+    $("header .container .menu .homeMenu").addClass("active-menu");
   } else if (heightScroll < this.window.innerHeight * 4) {
-    $("header .container .menu li a").removeClass('active-menu');
-    $("header .container .menu .courseMenu").addClass('active-menu');
+    $("header .container .menu li a").removeClass("active-menu");
+    $("header .container .menu .courseMenu").addClass("active-menu");
   } else if (heightScroll < this.window.innerHeight * 5) {
     $("header .container .menu li a").removeClass('active-menu');
     $("header .container .menu .aboutUsMenu").addClass('active-menu');
@@ -243,7 +243,7 @@ $(".course__item_img").flickity({
   prevNextButtons: false,
   pageDots: false,
   on: {
-    ready: function () { },
+    ready: function () {},
     change: function (index) {
       //sub title
       let subTitle = $(".course__item_content-titleSub .title-sub");
@@ -324,3 +324,25 @@ function scrollToElement() {
 
 scrollToElement();
 // initPhotoSwipeFromDOM(".family__img_list");
+//-----------------------------------------------------------feedback-------------------------------------------------------
+$(".feedback__content_list").flickity({
+  cellAlign: "center",
+  wrapAround: true,
+  contain: true,
+  draggable: true,
+  imagesLoaded: true,
+  prevNextButtons: false,
+  pageDots: false,
+  on: {
+    ready: function () {},
+    change: function (index) {},
+  },
+});
+
+$(".feedback__control_prev").on("click", function () {
+  $(".feedback__content_list").flickity("previous");
+});
+
+$(".feedback__control_next").on("click", function () {
+  $(".feedback__content_list").flickity("next");
+});
