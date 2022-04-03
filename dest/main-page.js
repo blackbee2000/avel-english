@@ -69,9 +69,9 @@ $(".slider__card_content-right--img").flickity({
   selectedAttraction: 0.01,
   friction: 0.1,
   imagesLoaded: true,
-  lazyLoad: true,
   prevNextButtons: false,
   pageDots: true,
+  // autoPlay: 3000,
   on: {
     ready: function (index) {
       let dotted = $(".flickity-page-dots");
@@ -165,7 +165,6 @@ $(".course__item_img").flickity({
   selectedAttraction: 0.01,
   friction: 0.1,
   imagesLoaded: true,
-  lazyLoad: true,
   prevNextButtons: false,
   pageDots: false,
   on: {
