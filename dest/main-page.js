@@ -3,7 +3,7 @@ let cursor = document.querySelector(".cursor");
 document.addEventListener("mousemove", (e) => {
   cursor.setAttribute(
     "style",
-    "top: " + (e.pageY - 15) + "px; left:" + (e.pageX - 15) + "px;"
+    "top: " + (e.screenY - 95) + "px; left:" + (e.screenX) + "px;"
   );
 });
 function hoverElement() {
@@ -84,7 +84,7 @@ $(".studySettle .carousel").flickity({
   prevNextButtons: false,
   pageDots: false,
   on: {
-    ready: function (index) {},
+    ready: function (index) { },
     change: function (index) {
       let content = $(".paragraph-text");
       console.log(content);
@@ -101,7 +101,7 @@ $(".aboutUs .carousel").flickity({
   lazyLoad: true,
   pageDots: false,
   on: {
-    ready: function (index) {},
+    ready: function (index) { },
     change: function (index) {
       // let content = $('.paragraph-text');
       // console.log(content);
@@ -243,7 +243,7 @@ $(".course__item_img").flickity({
   prevNextButtons: false,
   pageDots: false,
   on: {
-    ready: function () {},
+    ready: function () { },
     change: function (index) {
       //sub title
       let subTitle = $(".course__item_content-titleSub .title-sub");
@@ -330,12 +330,11 @@ $(".feedback__content_list").flickity({
   wrapAround: true,
   contain: true,
   draggable: true,
-  imagesLoaded: true,
   prevNextButtons: false,
   pageDots: false,
   on: {
-    ready: function () {},
-    change: function (index) {},
+    ready: function () { },
+    change: function (index) { },
   },
 });
 

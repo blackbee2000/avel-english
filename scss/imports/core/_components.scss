@@ -7,12 +7,13 @@ section {
   }
 } // css components
 .cursor {
-  position: absolute;
+  position: fixed;
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: $white-cl;
   mix-blend-mode: difference;
+  transition: 0.5s;
   transition: 0.3s cubic-bezier(0.44, 0.15, 0, 1.54) width,
     0.3s cubic-bezier(0.44, 0.15, 0, 1.54) height, 0.3s opacity, 0.3s background;
   transition-timing-function: ease-in-out;
