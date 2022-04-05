@@ -665,6 +665,28 @@ body {
             margin-right: 10px;
           }
         }
+        &-name,
+        &-sub,
+        &-text,
+        .social {
+          visibility: hidden;
+          opacity: 0;
+          transition: $t;
+          transform: translateY(10%);
+          // transition-delay: calc(var(--delay));
+        }
+        &.active--Aboutus {
+          .paragraph-name,
+          .paragraph-sub,
+          .paragraph-text,
+          .social {
+            visibility: visible;
+            opacity: 1;
+            transition: $t;
+            transform: translateX(0);
+            transition-delay: calc(var(--delay)) !important;
+          }
+        }
       }
     }
   }
