@@ -16,6 +16,7 @@ function hoverElement() {
   var title_course = $('.course__title');
   var button = $('.button');
   var paragraphAbout = $('.aboutUs .paragraph')
+  var image = $('.image-slider')
   //logo
   logo.mouseover(function () {
     cursor1.addClass('hover-logo')
@@ -72,8 +73,25 @@ function hoverElement() {
   paragraphAbout.mouseout(function () {
     cursor1.removeClass('hover-element')
   })
+  //image
+  image.mouseover(function () {
+    cursor1.addClass('hover-image')
+  })
+  image.mouseout(function () {
+    cursor1.removeClass('hover-image')
+  })
 }
 hoverElement();
+// -----------------------------------------------------registerbutton-------------------------------------------------------------
+
+$('.registerButton').on('click', function () {
+  $('.popup').addClass('activePopup');
+  $('.shadow').addClass('activePopup');
+})
+$('.shadow').on('click', function () {
+  $('.popup').removeClass('activePopup');
+  $('.shadow').removeClass('activePopup');
+})
 //----------------------------------------------------------------------------------------
 $(".studySettle .carousel").flickity({
   cellAlign: "left",
@@ -131,11 +149,10 @@ $(".slider__card_content-right--img").flickity({
   imagesLoaded: true,
   prevNextButtons: false,
   pageDots: true,
-  // autoPlay: 3000,
   on: {
     ready: function (index) {
       let dotted = $(".flickity-page-dots");
-      console.log("thai duy linh", dotted);
+      // console.log("thai duy linh", dotted);
       let paging = $(".slider__card_bottom-page--dotted");
       dotted.appendTo(paging);
     },
@@ -218,9 +235,12 @@ window.addEventListener("scroll", function () {
   } else if (heightScroll < this.window.innerHeight * 5) {
     $("header .container .menu li a").removeClass('active-menu');
     $("header .container .menu .aboutUsMenu").addClass('active-menu');
-  } else if (heightScroll < this.window.innerHeight * 6) {
+  } else if (heightScroll <= this.window.innerHeight * 7) {
     $("header .container .menu li a").removeClass('active-menu');
     $("header .container .menu .feedbackMenu").addClass('active-menu');
+  } else {
+    $("header .container .menu li a").removeClass('active-menu');
+    $("header .container .menu .contactMenu").addClass('active-menu');
   }
   // if(heightScroll )
 });
@@ -315,6 +335,12 @@ function scrollToElement() {
       if ($(this).text() === "Contact") {
         $([document.documentElement, document.body]).animate(
           { scrollTop: $(".contact").offset().top },
+          "5000"
+        );
+      }
+      if ($(this).text() === "Feedback") {
+        $([document.documentElement, document.body]).animate(
+          { scrollTop: $(".feedback").offset().top },
           "5000"
         );
       }

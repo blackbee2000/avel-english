@@ -14,8 +14,8 @@ section {
   background: $white-cl;
   mix-blend-mode: difference;
   transition: 0.5s;
-  transition: 0.3s cubic-bezier(0.44, 0.15, 0, 1.54) width,
-    0.3s cubic-bezier(0.44, 0.15, 0, 1.54) height, 0.3s opacity, 0.3s background;
+  transition: $t cubic-bezier(0.44, 0.15, 0, 1.54) width,
+    $t cubic-bezier(0.44, 0.15, 0, 1.54) height, $t opacity, $t background;
   transition-timing-function: ease-in-out;
   user-select: none;
   pointer-events: none;
@@ -52,6 +52,17 @@ section {
   &.hover-element {
     width: 100px;
     height: 100px;
+    transition: 0.3s cubic-bezier(0.44, 0.15, 0, 1.54) width,
+      0.3s cubic-bezier(0.44, 0.15, 0, 1.54) height, 0.3s opacity,
+      0.3s background;
+    transition-timing-function: ease-in-out;
+  }
+  &.hover-image {
+    width: 120px;
+    height: 120px;
+    mix-blend-mode: normal;
+    background-color: transparent;
+    border: 1px solid $white-cl;
     transition: 0.3s cubic-bezier(0.44, 0.15, 0, 1.54) width,
       0.3s cubic-bezier(0.44, 0.15, 0, 1.54) height, 0.3s opacity,
       0.3s background;

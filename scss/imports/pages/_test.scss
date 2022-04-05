@@ -47,6 +47,7 @@
           @include midimg(100%);
           transform: translate(-50%, -50%) scale(1);
           @include transition($t);
+          cursor: none;
         }
         &--opacity {
           width: 100%;
