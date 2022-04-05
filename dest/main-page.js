@@ -17,6 +17,7 @@ function hoverElement() {
   var button = $('.button');
   var paragraphAbout = $('.aboutUs .paragraph')
   var image = $('.image-slider')
+  var swipe = $('.cursor .swipe')
   //logo
   logo.mouseover(function () {
     cursor1.addClass("hover-logo");
@@ -76,9 +77,11 @@ function hoverElement() {
   //image
   image.mouseover(function () {
     cursor1.addClass('hover-image')
+    swipe.addClass('active-swipe')
   })
   image.mouseout(function () {
     cursor1.removeClass('hover-image')
+    swipe.removeClass('active-swipe')
   })
 }
 hoverElement();
@@ -92,6 +95,13 @@ $('.shadow').on('click', function () {
   $('.popup').removeClass('activePopup');
   $('.shadow').removeClass('activePopup');
 })
+$(document).keyup(function (e) {
+  if (e.key === "Escape") { // escape key maps to keycode `27`
+    // <DO YOUR WORK HERE>
+    $('.popup').removeClass('activePopup');
+    $('.shadow').removeClass('activePopup');
+  }
+});
 //----------------------------------------------------------------------------------------
 $(".studySettle .carousel").flickity({
   cellAlign: "left",
@@ -102,7 +112,7 @@ $(".studySettle .carousel").flickity({
   prevNextButtons: false,
   pageDots: false,
   on: {
-    ready: function (index) {},
+    ready: function (index) { },
     change: function (index) {
       let content = $(".paragraph-text");
       console.log(content);
@@ -119,7 +129,7 @@ $(".aboutUs .carousel").flickity({
   lazyLoad: true,
   pageDots: false,
   on: {
-    ready: function (index) {},
+    ready: function (index) { },
     change: function (index) {
       // let content = $('.paragraph-text');
       // console.log(content);
@@ -248,7 +258,7 @@ $(".course__item_img").flickity({
   prevNextButtons: false,
   pageDots: false,
   on: {
-    ready: function () {},
+    ready: function () { },
     change: function (index) {
       //sub title
       let subTitle = $(".course__item_content-titleSub .title-sub");
@@ -350,8 +360,8 @@ $(".feedback__content_list").flickity({
   prevNextButtons: false,
   pageDots: false,
   on: {
-    ready: function () {},
-    change: function (index) {},
+    ready: function () { },
+    change: function (index) { },
   },
 });
 
