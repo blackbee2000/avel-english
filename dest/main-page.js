@@ -3,75 +3,75 @@ let cursor = document.querySelector(".cursor");
 document.addEventListener("mousemove", (e) => {
   cursor.setAttribute(
     "style",
-    "top: " + (e.screenY - 95) + "px; left:" + (e.screenX) + "px;"
+    "top: " + (e.screenY - 95) + "px; left:" + e.screenX + "px;"
   );
 });
 function hoverElement() {
-  var cursor1 = $('.cursor');
-  var logo = $('.logo');
-  var menu = $('header .container .menu li');
-  var sub = $('.title-sub');
-  var title = $('.title');
-  var content = $('.content');
-  var title_course = $('.course__title');
-  var button = $('.button');
-  var paragraphAbout = $('.aboutUs .paragraph')
+  var cursor1 = $(".cursor");
+  var logo = $(".logo");
+  var menu = $("header .container .menu li");
+  var sub = $(".title-sub");
+  var title = $(".title");
+  var content = $(".content");
+  var title_course = $(".course__title");
+  var button = $(".button");
+  var paragraphAbout = $(".aboutUs .paragraph");
   //logo
   logo.mouseover(function () {
-    cursor1.addClass('hover-logo')
-  })
+    cursor1.addClass("hover-logo");
+  });
   logo.mouseout(function () {
-    cursor1.removeClass('hover-logo')
-  })
+    cursor1.removeClass("hover-logo");
+  });
   //menu-header
   menu.mouseover(function () {
-    cursor1.addClass('hover-menu')
-  })
+    cursor1.addClass("hover-menu");
+  });
   menu.mouseout(function () {
-    cursor1.removeClass('hover-menu')
-  })
+    cursor1.removeClass("hover-menu");
+  });
   //title
   title.mouseover(function () {
-    cursor1.addClass('hover-element')
-  })
+    cursor1.addClass("hover-element");
+  });
   title.mouseout(function () {
-    cursor1.removeClass('hover-element')
-  })
+    cursor1.removeClass("hover-element");
+  });
   //sub
   sub.mouseover(function () {
-    cursor1.addClass('hover-element')
-  })
+    cursor1.addClass("hover-element");
+  });
   sub.mouseout(function () {
-    cursor1.removeClass('hover-element')
-  })
+    cursor1.removeClass("hover-element");
+  });
   //content
   content.mouseover(function () {
-    cursor1.addClass('hover-element')
-  })
+    cursor1.addClass("hover-element");
+  });
   content.mouseout(function () {
-    cursor1.removeClass('hover-element')
-  })
+    cursor1.removeClass("hover-element");
+  });
   //title-course
   title_course.mouseover(function () {
-    cursor1.addClass('hover-element')
-  })
+    cursor1.addClass("hover-element");
+  });
   title_course.mouseout(function () {
-    cursor1.removeClass('hover-element')
-  })
+    cursor1.removeClass("hover-element");
+  });
   //button
   button.mouseover(function () {
-    cursor1.addClass('hover-element')
-  })
+    cursor1.addClass("hover-element");
+  });
   button.mouseout(function () {
-    cursor1.removeClass('hover-element')
-  })
+    cursor1.removeClass("hover-element");
+  });
   //about Us
   paragraphAbout.mouseover(function () {
-    cursor1.addClass('hover-element')
-  })
+    cursor1.addClass("hover-element");
+  });
   paragraphAbout.mouseout(function () {
-    cursor1.removeClass('hover-element')
-  })
+    cursor1.removeClass("hover-element");
+  });
 }
 hoverElement();
 //----------------------------------------------------------------------------------------
@@ -84,7 +84,7 @@ $(".studySettle .carousel").flickity({
   prevNextButtons: false,
   pageDots: false,
   on: {
-    ready: function (index) { },
+    ready: function (index) {},
     change: function (index) {
       let content = $(".paragraph-text");
       console.log(content);
@@ -101,7 +101,7 @@ $(".aboutUs .carousel").flickity({
   lazyLoad: true,
   pageDots: false,
   on: {
-    ready: function (index) { },
+    ready: function (index) {},
     change: function (index) {
       // let content = $('.paragraph-text');
       // console.log(content);
@@ -157,25 +157,10 @@ $(".slider__card_content-right--img").flickity({
         $(".slider__card_content-control--next").css({ opacity: "1" });
       }
 
-      //sub title
-      let subTitle = $(".slider__card_content-left--subTitle .title-sub");
-      subTitle.eq(index).addClass("active--title-sub");
-      subTitle.eq(index).siblings().removeClass("active--title-sub");
-
-      //title
-      let title = $(".slider__card_content-left--title .title");
-      title.eq(index).addClass("active--title");
-      title.eq(index).siblings().removeClass("active--title");
-
-      //content
-      let content = $(".slider__card_content-left--content .content");
-      content.eq(index).addClass("active--content");
-      content.eq(index).siblings().removeClass("active--content");
-
-      //button
-      let button = $(".slider__card_content-left--button .button");
-      button.eq(index).addClass("active--button");
-      button.eq(index).siblings().removeClass("active--button");
+      //Active slider
+      let activeSlider = $(".slider__card_content-left--item");
+      activeSlider.eq(index).addClass("active--Slider");
+      activeSlider.eq(index).siblings().removeClass("active--Slider");
     },
   },
 });
@@ -216,11 +201,11 @@ window.addEventListener("scroll", function () {
     $("header .container .menu li a").removeClass("active-menu");
     $("header .container .menu .courseMenu").addClass("active-menu");
   } else if (heightScroll < this.window.innerHeight * 5) {
-    $("header .container .menu li a").removeClass('active-menu');
-    $("header .container .menu .aboutUsMenu").addClass('active-menu');
+    $("header .container .menu li a").removeClass("active-menu");
+    $("header .container .menu .aboutUsMenu").addClass("active-menu");
   } else if (heightScroll < this.window.innerHeight * 6) {
-    $("header .container .menu li a").removeClass('active-menu');
-    $("header .container .menu .feedbackMenu").addClass('active-menu');
+    $("header .container .menu li a").removeClass("active-menu");
+    $("header .container .menu .feedbackMenu").addClass("active-menu");
   }
   // if(heightScroll )
 });
@@ -243,7 +228,7 @@ $(".course__item_img").flickity({
   prevNextButtons: false,
   pageDots: false,
   on: {
-    ready: function () { },
+    ready: function () {},
     change: function (index) {
       //sub title
       let subTitle = $(".course__item_content-titleSub .title-sub");
@@ -312,6 +297,12 @@ function scrollToElement() {
           "5000"
         );
       }
+      if ($(this).text() === "Feedback") {
+        $([document.documentElement, document.body]).animate(
+          { scrollTop: $(".feedback").offset().top },
+          "5000"
+        );
+      }
       if ($(this).text() === "Contact") {
         $([document.documentElement, document.body]).animate(
           { scrollTop: $(".contact").offset().top },
@@ -333,8 +324,8 @@ $(".feedback__content_list").flickity({
   prevNextButtons: false,
   pageDots: false,
   on: {
-    ready: function () { },
-    change: function (index) { },
+    ready: function () {},
+    change: function (index) {},
   },
 });
 
