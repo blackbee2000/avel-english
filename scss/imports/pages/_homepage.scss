@@ -58,6 +58,7 @@
             transform: translateY(10%);
           }
           &.active--Slider {
+            z-index: 10000000;
             .title-sub,
             .title,
             .content {
@@ -693,13 +694,13 @@ body {
     background: $white-cl;
     border-radius: 10px;
     z-index: 981;
-    &_title{
+    &_title {
       font-size: 50px;
-      font-family: 'AV';
+      font-family: "AV";
     }
-    &_content{
+    &_content {
       height: 400px;
-      &-image{
+      &-image {
         height: 100%;
         overflow: hidden;
       }
