@@ -71,6 +71,9 @@ header {
       }
     }
   }
+  .nav-menu-span {
+    display: none;
+  }
 }
 .active {
   background: rgba(255, 255, 255, 0.3);
@@ -92,5 +95,56 @@ header {
   transition: $t;
   &::before {
     background: #000 !important;
+  }
+}
+@include xs {
+  header {
+    height: 60px;
+    .container {
+      .logo {
+        a {
+          img {
+            width: 100px;
+            height: 30px;
+            object-fit: contain;
+          }
+          .hidden {
+            display: none;
+          }
+        }
+      }
+      .menu {
+        display: none;
+      }
+    }
+    .nav-menu-span {
+      display: block;
+      width: 30px;
+      height: 40px;
+      position: relative;
+      transition: 0.5s ease-in-out;
+      overflow: hidden;
+      span {
+        position: absolute;
+        margin-bottom: 3px;
+        height: 1px;
+        width: 100%;
+        background: $white-cl;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: 0.5s ease-in-out;
+        &:nth-child(1) {
+          top: 15px;
+        }
+        &:nth-child(2) {
+          top: 20px;
+        }
+        &:nth-child(3) {
+          top: 25px;
+        }
+      }
+    }
   }
 }

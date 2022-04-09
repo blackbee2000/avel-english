@@ -134,9 +134,15 @@ body {
   }
   @include sm {
     // CSS responsive tablet
+    .cursor{
+      display: none;
+    }
   }
   @include xs {
     // CSS responsive mobile
+    .cursor{
+      display: none;
+    }
   }
   @include xxs {
     // CSS responsive small mobile
