@@ -260,25 +260,9 @@ $(".course__item_img").flickity({
   on: {
     ready: function () {},
     change: function (index) {
-      //sub title
-      let subTitle = $(".course__item_content-titleSub .title-sub");
-      subTitle.eq(index).addClass("active--title-sub");
-      subTitle.eq(index).siblings().removeClass("active--title-sub");
-
-      //title
-      let title = $(".course__item_content-title .title");
-      title.eq(index).addClass("active--title");
-      title.eq(index).siblings().removeClass("active--title");
-
-      //content
-      let content = $(".course__item_content-content .content");
-      content.eq(index).addClass("active--content");
-      content.eq(index).siblings().removeClass("active--content");
-
-      //button
-      let button = $(".course__item_content-button .button");
-      button.eq(index).addClass("active--button");
-      button.eq(index).siblings().removeClass("active--button");
+      let contentCourse = $(".course__item_content-item");
+      contentCourse.eq(index).addClass("active--Course");
+      contentCourse.eq(index).siblings().removeClass("active--Course");
     },
   },
 });
