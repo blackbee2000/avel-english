@@ -71,18 +71,11 @@ header {
       }
     }
   }
-  .menu-hidden {
-    background: $white-cl;
-    padding: 20px;
-    visibility: hidden;
-    transform: translateX(100%);
-    opacity: 0;
-    transition: $t;
-  }
   .nav-menu-span {
     display: none;
   }
 }
+
 .active {
   background: rgba(255, 255, 255, 0.3);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -98,7 +91,7 @@ header {
   transform: translateY(0px);
   transition-duration: 0.1s;
 }
-.backMenu {
+.blackMenu {
   color: #000 !important;
   transition: $t;
   &::before {
@@ -135,7 +128,7 @@ header {
       span {
         position: absolute;
         margin-bottom: 3px;
-        height: 1px;
+        height: 2px;
         width: 100%;
         background: $white-cl;
         border-radius: 9px;
@@ -154,13 +147,11 @@ header {
         }
       }
     }
-    .active-menu-hidden {
-      background: $white-cl;
-      padding: 20px;
-      visibility: visible;
-      transform: translateX(0%);
-      opacity: 1;
-      transition: $t;
+    .black-nav {
+      span {
+        background: black;
+      }
     }
   }
+  
 }

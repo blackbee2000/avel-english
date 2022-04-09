@@ -904,7 +904,7 @@ body {
           transition: $t;
         }
         &.active--Course {
-          z-index: 100000;
+          z-index: 1000;
           .title-sub,
           .title,
           .content,

@@ -86,7 +86,17 @@ function hoverElement() {
 }
 hoverElement();
 //----------------------------------Click menu header ---------------------------------------------
+$('.nav-menu-span').on('click', function () {
+  $('.menu-hidden').toggleClass('active-menu-hidden')
 
+});
+$('.menu-hidden ul li a').on('click', function () {
+  $('.menu-hidden').removeClass('active-menu-hidden')
+})
+$('.button-close').on('click',function(){
+  $('.menu-hidden').removeClass('active-menu-hidden')
+
+})
 // -----------------------------------------------------registerbutton-------------------------------------------------------------
 
 $(".registerButton").on("click", function () {
@@ -115,7 +125,7 @@ $(".studySettle .carousel").flickity({
   prevNextButtons: false,
   pageDots: false,
   on: {
-    ready: function (index) {},
+    ready: function (index) { },
     change: function (index) {
       let content = $(".studySettle .content-study .paragraph-text");
       console.log(content);
@@ -132,7 +142,7 @@ $(".aboutUs .carousel").flickity({
   lazyLoad: true,
   pageDots: false,
   on: {
-    ready: function (index) {},
+    ready: function (index) { },
     change: function (index) {
       let aboutContent = $(".aboutUs .content-about .paragraph");
       aboutContent.eq(index).addClass("active--Aboutus");
@@ -209,6 +219,7 @@ window.addEventListener("scroll", function () {
   var heightScroll = document.documentElement.scrollTop;
   var header = $(".header");
   var menu = $("header .container .menu li a");
+  var menuSpan = $('header .nav-menu-span');
   if (heightScroll > 10) {
     header.addClass("active");
   } else {
@@ -216,9 +227,11 @@ window.addEventListener("scroll", function () {
   }
 
   if (heightScroll / this.window.innerHeight >= 0.99) {
-    menu.addClass("backMenu");
+    menu.addClass("blackMenu");
+    menuSpan.addClass("black-nav");
   } else {
-    menu.removeClass("backMenu");
+    menu.removeClass("blackMenu");
+    menuSpan.removeClass("black-nav");
   }
   console.log("====================================");
   console.log($("header .container .menu li a"));
@@ -260,7 +273,7 @@ $(".course__item_img").flickity({
   prevNextButtons: false,
   pageDots: false,
   on: {
-    ready: function () {},
+    ready: function () { },
     change: function (index) {
       let contentCourse = $(".course__item_content-item");
       contentCourse.eq(index).addClass("active--Course");
@@ -297,7 +310,7 @@ function scrollToElement() {
     $(this).click(function () {
       if ($(this).text() === "Home") {
         $([document.documentElement, document.body]).animate(
-          { scrollTop: 0 },
+          { scrollTop: $('.slider').offset().top },
           "5000"
         );
       }
@@ -346,8 +359,8 @@ $(".feedback__content_list").flickity({
   prevNextButtons: false,
   pageDots: false,
   on: {
-    ready: function () {},
-    change: function (index) {},
+    ready: function () { },
+    change: function (index) { },
   },
 });
 
