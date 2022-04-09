@@ -71,6 +71,14 @@ header {
       }
     }
   }
+  .menu-hidden {
+    background: $white-cl;
+    padding: 20px;
+    visibility: hidden;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: $t;
+  }
   .nav-menu-span {
     display: none;
   }
@@ -114,7 +122,7 @@ header {
         }
       }
       .menu {
-        display: none;
+        display: none !important;
       }
     }
     .nav-menu-span {
@@ -145,6 +153,14 @@ header {
           top: 25px;
         }
       }
+    }
+    .active-menu-hidden {
+      background: $white-cl;
+      padding: 20px;
+      visibility: visible;
+      transform: translateX(0%);
+      opacity: 1;
+      transition: $t;
     }
   }
 }
