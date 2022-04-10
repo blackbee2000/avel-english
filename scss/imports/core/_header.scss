@@ -153,5 +153,21 @@ header {
       }
     }
   }
-  
+}
+@include md {
+  header {
+    .container {
+      .logo a img {
+        width: 130px;
+        height: 35px;
+      }
+      .menu li {
+        padding: 0 10px;
+        a {
+          font-size: 18px;
+          // @include text(25px, CT, 42px, $white-cl, none);
+        }
+      }
+    }
+  }
 }

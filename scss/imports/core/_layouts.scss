@@ -18,8 +18,10 @@ body {
   --fsTitle: 70px;
   --fsContent: 25px;
   --sizedWhatDoWeDoImage: 606px;
-  --leftBeforeImage: -20px;
+  --leftBeforeImage: -20px; 
   --topBeforeImage: -40px;
+  --rightAfterImage: 20px;
+  --bottomAfterImage: -50px;
   cursor: none;
   width: 100%;
   overflow-x: hidden;
@@ -182,6 +184,11 @@ body {
   }
   @include md {
     // CSS responsive desktop
+    --sizedWhatDoWeDoImage: 400px;
+    --leftBeforeImage: 100px;
+    --topBeforeImage: -40px;
+    --rightAfterImage: 100px;
+    --bottomAfterImage: -40px;
   }
   @include sm {
     // CSS responsive tablet
@@ -191,6 +198,14 @@ body {
   }
   @include xs {
     // CSS responsive mobile
+    --sizedWhatDoWeDoImage: 250px;
+    --leftBeforeImage: 30px;
+    --topBeforeImage: -40px;
+    --rightAfterImage: 30px;
+    --bottomAfterImage: -40px;
+    --fsSubTitle: 14px;
+    --fsTitle: 40px;
+    --fsContent: 16px;
     .cursor {
       display: none;
     }

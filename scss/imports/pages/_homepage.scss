@@ -479,7 +479,6 @@ body {
           position: relative;
           z-index: 2;
           transition: $t;
-          // cursor: pointer;
           img {
             @include midimg(606px);
           }
@@ -497,8 +496,8 @@ body {
         }
         &::after {
           position: absolute;
-          right: 20px;
-          bottom: -50px;
+          right: var(--rightAfterImage);
+          bottom: var(--bottomAfterImage);
           width: var(--sizedWhatDoWeDoImage);
           height: var(--sizedWhatDoWeDoImage);
           content: "";
@@ -544,6 +543,7 @@ body {
           }
         }
       }
+
       .right {
         display: flex;
         flex-direction: column;
@@ -613,6 +613,7 @@ body {
         border-radius: 10px;
         overflow: hidden;
         .flickity-button {
+          display: none;
           background: transparent !important;
           color: white;
           transition: $t;
@@ -843,7 +844,139 @@ body {
     }
   }
 }
+@include md {
+  body {
+    .information .container .row {
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+      .left {
+        .image {
+          img {
+            @include midimg(400px);
+          }
+        }
+        .circle-right {
+          right: 80px;
+          top: -40px;
+        }
+        .circle-left {
+          left: 80px;
+          bottom: -40px;
+        }
+      }
+      .right {
+        margin-top: 100px;
+        align-items: center;
+      }
+    }
+    .studySettle {
+      width: inherit;
+      padding-top: 65px;
+      .content-study {
+        .container .row {
+          .left-title {
+            margin-bottom: 30px;
+            span {
+              font-size: 100px !important;
+            }
+            .title-two {
+              top: 100px;
+            }
+          }
+          .left .paragraph {
+            height: 150px;
+            white-space: wrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .registerButton {
+            margin-top: 0px;
+            margin-bottom: 15px;
+          }
+          .right {
+            height: calc(100vh - 475px);
+          }
+        }
+      }
+    }
+  }
+}
+@include xs {
+  body {
+    .information {
+      .container .row {
+        width: auto;
+        .left {
+          .image {
+            img {
+              @include midimg(300px);
+            }
+          }
+          .circle-right {
+            display: none;
+          }
+          .circle-left {
+            display: none;
+          }
+        }
+        .right {
+          margin-top: 80px;
+          align-items: center;
+          .row {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .studySettle {
+      padding: 50px 15px 0;
+      width: inherit;
+      .content-study {
+        .container {
+          .row {
+            flex-direction: column-reverse;
+            .left-title {
+              margin-bottom: 40px;
+              span {
+                font-size: 60px !important;
+                line-height: 65px;
+              }
+              .title-two {
+                top: 55px;
+              }
+            }
+            .left .paragraph {
+              height: 150px;
+              white-space: wrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            .right {
+              height: calc(100vh - 450px);
+              .flickity-button {
+                display: block;
+                z-index: 10;
+                width: 30px;
+              }
+              .slider_child .image .name {
+                font-size: 30px;
+                bottom: 15px;
+              }
+            }
+          }
+        }
+      }
+      .background-circle {
+        right: -556px;
+        top: -268px;
+      }
+    }
+  }
+}
+// @include xxs{
 
+// }
 //---------------------------------------------------------Course-------------------------------------------------
 .course {
   width: 100%;
@@ -995,7 +1128,7 @@ body {
     }
   }
 }
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   .course {
     &__title {
       font-size: 50px;
@@ -1009,13 +1142,13 @@ body {
             height: 150px;
             font-size: 16px;
           }
-          .title{
+          .title {
             font-style: 40px;
           }
           .title-sub {
             font-size: 14px;
           }
-          .button{
+          .button {
             font-size: 16px;
             padding: 0 70px;
           }
@@ -1054,7 +1187,7 @@ body {
             text-align: center;
             font-size: 18px;
           }
-          .title{
+          .title {
             font-style: 50px;
           }
           .title-sub {
@@ -1064,7 +1197,7 @@ body {
               display: none;
             }
           }
-          .button{
+          .button {
             font-size: 18px;
             padding: 0 70px;
           }
@@ -1136,7 +1269,7 @@ body {
 }
 @include xxs {
   .course {
-    &__title{
+    &__title {
       padding-bottom: 5px;
       font-size: 40px !important;
     }
@@ -1204,7 +1337,7 @@ body {
 }
 @media (max-width: 380px) {
   .course {
-    &__title{
+    &__title {
       font-size: 35px !important;
     }
     &__item {
@@ -1262,7 +1395,7 @@ body {
 }
 @media (max-width: 320px) {
   .course {
-    &__title{
+    &__title {
       font-size: 30px !important;
     }
     &__item {

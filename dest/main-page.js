@@ -122,7 +122,7 @@ $(".studySettle .carousel").flickity({
   draggable: true,
   imagesLoaded: true,
   lazyLoad: 2,
-  prevNextButtons: false,
+  prevNextButtons: true,
   pageDots: false,
   on: {
     ready: function (index) { },
