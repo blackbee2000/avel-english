@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" class="has-scroll-init has-scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trungbeo</title>
+    <link rel="stylesheet" href="dest/style.min.css" />
+    <link rel="stylesheet" href="dest/fonts.css" />
+    <link rel="stylesheet" href="dest/stylelibs.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trungbeo</title>
-  <link rel="stylesheet" href="dest/style.min.css" />
-  <link rel="stylesheet" href="dest/fonts.css" />
-  <link rel="stylesheet" href="dest/stylelibs.min.css" />
-</head>
-
-<body>
-  <div class="cursor">
-    <div class="swipe">Swipe</div>
-  </div>
-  <div class="div">
-    <header class="header">
-      <div class="container">
-        <div class="logo">
-          <a href="#">
-            <img src="img/avel-logo.png" alt="avel-logo" />
-            <h1 class="hidden">Avel English</h1>
-          </a>
+  <body>
+    <div class="cursor">
+      <div class="swipe">Swipe</div>
+    </div>
+    <div class="div">
+      <header class="header">
+        <div class="container">
+          <div class="logo">
+            <a href="#">
+              <img src="img/avel-logo.png" alt="avel-logo" />
+              <h1 class="hidden">Avel English</h1>
+            </a>
+          </div>
+          <ul class="menu">
+            <li><a href="#home" class="activeMenu homeMenu">Home</a></li>
+            <li><a href="#course" class="courseMenu">Course</a></li>
+            <li><a href="#aboutUs" class="aboutUsMenu">About Us</a></li>
+            <li><a href="#feedback" class="feedbackMenu">Feedback</a></li>
+            <li><a href="#contact" class="contactMenu">Contact</a></li>
+          </ul>
+          <div class="nav-menu-span">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-        <ul class="menu">
-          <li><a href="#home" class="activeMenu homeMenu">Home</a></li>
-          <li><a href="#course" class="courseMenu">Course</a></li>
-          <li><a href="#aboutUs" class="aboutUsMenu">About Us</a></li>
-          <li><a href="#feedback" class="feedbackMenu">Feedback</a></li>
-          <li><a href="#contact" class="contactMenu">Contact</a></li>
-        </ul>
-        <div class="nav-menu-span">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="menu-hidden">
+          <ul>
+            <li><a href="#home" class="activeMenu homeMenu">Home</a></li>
+            <li><a href="#course" class="courseMenu">Course</a></li>
+            <li><a href="#aboutUs" class="aboutUsMenu">About Us</a></li>
+            <li><a href="#feedback" class="feedbackMenu">Feedback</a></li>
+            <li><a href="#contact" class="contactMenu">Contact</a></li>
+          </ul>
         </div>
       </div>
     </header>
@@ -168,13 +177,42 @@
                     <img class="gallery-cell image-slider" src="img/img-slider-one.jpg" alt="img-slider-one" />
                     <img class="gallery-cell image-slider" src="img/img-slider-one.jpg" alt="img-slider-one" />
                   </div>
-                </div>
-                <div class="slider__card_content-control">
-                  <div class="slider__card_content-control--prev">
-                    <img src="img/icon-arrow-left.svg" alt="arrow-left" />
+                  <div class="slider__card_content-right">
+                    <div class="slider__card_content-right--img">
+                      <img
+                        class="gallery-cell image-slider"
+                        src="img/img-slider-one.jpg"
+                        alt="img-slider-one"
+                      />
+                      <img
+                        class="gallery-cell image-slider"
+                        src="img/img-slider-one.jpg"
+                        alt="img-slider-one"
+                      />
+                      <img
+                        class="gallery-cell image-slider"
+                        src="img/img-slider-one.jpg"
+                        alt="img-slider-one"
+                      />
+                      <img
+                        class="gallery-cell image-slider"
+                        src="img/img-slider-one.jpg"
+                        alt="img-slider-one"
+                      />
+                      <img
+                        class="gallery-cell image-slider"
+                        src="img/img-slider-one.jpg"
+                        alt="img-slider-one"
+                      />
+                    </div>
                   </div>
-                  <div class="slider__card_content-control--next">
-                    <img src="img/icon-arrow-right.svg" alt="arrow-right" />
+                  <div class="slider__card_content-control">
+                    <div class="slider__card_content-control--prev">
+                      <img src="img/icon-arrow-left.svg" alt="arrow-left" />
+                    </div>
+                    <div class="slider__card_content-control--next">
+                      <img src="img/icon-arrow-right.svg" alt="arrow-right" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -215,12 +253,13 @@
                     <div class="button registerButton">Register</div>
                   </div>
                 </div>
+                <div class="slider__card_scroll">
+                  <img src="img/icon-scroll.png" alt="icon-scroll" />
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section id="studySettle" class="studySettle row" id="section">
-          <div class="content-study">
+          </section>
+          <section id="information" class="information">
             <div class="container">
               <div class="row">
                 <div class="col-lg-6 col-md-12 col-12 left">
@@ -263,8 +302,8 @@
                     </p>
                   </div>
                   <div class="row">
-                    <div class="col-md-4 offset-md-8">
-                      <div class="button registerButton">Get Information</div>
+                    <div class="col-md-5">
+                      <div class="button registerButton">Register</div>
                     </div>
                   </div>
                 </div>
@@ -276,101 +315,137 @@
                         <div class="name">England</div>
                       </div>
                     </div>
-                    <div class="carousel-cell slider_child">
-                      <div class="image image-slider">
-                        <img data-flickity-lazyload="assets/american.jpg" alt="settle" />
-                        <div class="name">American</div>
+                    <div class="row">
+                      <div class="col-md-4 offset-md-8">
+                        <div class="button registerButton">Get Information</div>
                       </div>
                     </div>
-                    <div class="carousel-cell slider_child">
-                      <div class="image image-slider">
-                        <img data-flickity-lazyload="assets/france.jpg" alt="settle" />
-                        <div class="name">France</div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="right carousel slider">
+                      <div class="carousel-cell slider_child">
+                        <div class="image image-slider">
+                          <img
+                            data-flickity-lazyload="assets/settle.png"
+                            alt="settle"
+                          />
+                          <div class="name">England</div>
+                        </div>
+                      </div>
+                      <div class="carousel-cell slider_child">
+                        <div class="image image-slider">
+                          <img
+                            data-flickity-lazyload="assets/american.jpg"
+                            alt="settle"
+                          />
+                          <div class="name">American</div>
+                        </div>
+                      </div>
+                      <div class="carousel-cell slider_child">
+                        <div class="image image-slider">
+                          <img
+                            data-flickity-lazyload="assets/france.jpg"
+                            alt="settle"
+                          />
+                          <div class="name">France</div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="background-v1"></div>
-          <div class="background-v2"></div>
-          <div class="background-circle"></div>
-        </section>
-        <section id="course" class="course right-to-left">
-          <div class="container course__title title">Course</div>
-          <div class="container course__item">
-            <div class="course__item_img">
-              <img src="img/course-banner.jpg" alt="course-banner" class="image-slider" />
-              <img src="img/course-banner.jpg" alt="course-banner" class="image-slider" />
-              <img src="img/course-banner.jpg" alt="course-banner" class="image-slider" />
-            </div>
-            <div class="course__item_content">
-              <div class="course__item_content-item active--Course">
-                <div class="title-sub" style="--delay: 0.6s">
-                  Trending Course
+            <div class="background-v1"></div>
+            <div class="background-v2"></div>
+            <div class="background-circle"></div>
+          </section>
+          <section id="course" class="course right-to-left">
+            <div class="container course__title title">Course</div>
+            <div class="container course__item">
+              <div class="course__item_img">
+                <img
+                  src="img/course-banner.jpg"
+                  alt="course-banner"
+                  class="image-slider"
+                />
+                <img
+                  src="img/course-banner.jpg"
+                  alt="course-banner"
+                  class="image-slider"
+                />
+                <img
+                  src="img/course-banner.jpg"
+                  alt="course-banner"
+                  class="image-slider"
+                />
+              </div>
+              <div class="course__item_content">
+                <div class="course__item_content-item active--Course">
+                  <div class="title-sub" style="--delay: 0.6s">
+                    Trending Course
+                  </div>
+                  <div class="title" style="--delay: 0.9s">IIC Foundation</div>
+                  <div class="content active--content" style="--delay: 1.2s">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Facilisis faucibus diam lectus ac faucibus mattis amet. Nibh
+                    tempor facilisi urna, viverra phasellus cras pulvinar proin
+                    porta. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Facilisis faucibus diam lectus ac faucibus mattis
+                    amet.
+                  </div>
+                  <div class="button registerButton" style="--delay: 1.5s">
+                    Register
+                  </div>
                 </div>
-                <div class="title" style="--delay: 0.9s">IIC Foundation</div>
-                <div class="content active--content" style="--delay: 1.2s">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Facilisis faucibus diam lectus ac faucibus mattis amet. Nibh
-                  tempor facilisi urna, viverra phasellus cras pulvinar proin
-                  porta. Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit. Facilisis faucibus diam lectus ac faucibus mattis
-                  amet.
+                <div class="course__item_content-item">
+                  <div class="title-sub" style="--delay: 0.6s">
+                    Trending Course
+                  </div>
+                  <div class="title" style="--delay: 0.9s">IIC Foundation</div>
+                  <div class="content active--content" style="--delay: 1.2s">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Facilisis faucibus diam lectus ac faucibus mattis amet. Nibh
+                    tempor facilisi urna, viverra phasellus cras pulvinar proin
+                    porta. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Facilisis faucibus diam lectus ac faucibus mattis
+                    amet.
+                  </div>
+                  <div class="button registerButton" style="--delay: 1.5s">
+                    Register
+                  </div>
                 </div>
-                <div class="button registerButton" style="--delay: 1.5s">
-                  Register
+                <div class="course__item_content-item">
+                  <div class="title-sub" style="--delay: 0.6s">
+                    Trending Course
+                  </div>
+                  <div class="title" style="--delay: 0.9s">IIC Foundation</div>
+                  <div class="content active--content" style="--delay: 1.2s">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Facilisis faucibus diam lectus ac faucibus mattis amet. Nibh
+                    tempor facilisi urna, viverra phasellus cras pulvinar proin
+                    porta. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Facilisis faucibus diam lectus ac faucibus mattis
+                    amet.
+                  </div>
+                  <div class="button registerButton" style="--delay: 1.5s">
+                    Register
+                  </div>
                 </div>
               </div>
-              <div class="course__item_content-item">
-                <div class="title-sub" style="--delay: 0.6s">
-                  Trending Course
-                </div>
-                <div class="title" style="--delay: 0.9s">IIC Foundation</div>
-                <div class="content active--content" style="--delay: 1.2s">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Facilisis faucibus diam lectus ac faucibus mattis amet. Nibh
-                  tempor facilisi urna, viverra phasellus cras pulvinar proin
-                  porta. Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit. Facilisis faucibus diam lectus ac faucibus mattis
-                  amet.
-                </div>
-                <div class="button registerButton" style="--delay: 1.5s">
-                  Register
-                </div>
-              </div>
-              <div class="course__item_content-item">
-                <div class="title-sub" style="--delay: 0.6s">
-                  Trending Course
-                </div>
-                <div class="title" style="--delay: 0.9s">IIC Foundation</div>
-                <div class="content active--content" style="--delay: 1.2s">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Facilisis faucibus diam lectus ac faucibus mattis amet. Nibh
-                  tempor facilisi urna, viverra phasellus cras pulvinar proin
-                  porta. Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit. Facilisis faucibus diam lectus ac faucibus mattis
-                  amet.
-                </div>
-                <div class="button registerButton" style="--delay: 1.5s">
-                  Register
-                </div>
+              <div class="width7" style="width: 7%"></div>
+            </div>
+            <div class="course__bottom">
+              <div class="course__bottom_scrollBar">
+                <div class="course__bottom_scrollBar-progressBar"></div>
               </div>
             </div>
-            <div class="width7" style="width: 7%"></div>
-          </div>
-          <div class="course__bottom">
-            <div class="course__bottom_scrollBar">
-              <div class="course__bottom_scrollBar-progressBar"></div>
-            </div>
-          </div>
-          <div class="course__control">
-            <div class="course__control_prev">
-              <img src="img/icon-left.svg" alt="icon-left" />
-            </div>
-            <div class="course__control_next">
-              <img src="img/icon-right.svg" alt="icon-right" />
+            <div class="course__control">
+              <div class="course__control_prev">
+                <img src="img/icon-left.svg" alt="icon-left" />
+              </div>
+              <div class="course__control_next">
+                <img src="img/icon-right.svg" alt="icon-right" />
+              </div>
             </div>
           </div>
         </section>
@@ -417,39 +492,28 @@
                     <div class="icon">
                       <img src="assets/icon/icon-fb.svg" alt="" />
                     </div>
-                    <div class="icon">
-                      <img src="assets/icon/icon-ins.svg" alt="" />
+                    <div class="paragraph-sub" style="--delay: 0.9s">
+                      Teacher Ielts Foundation
                     </div>
-                    <div class="icon">
-                      <img src="assets/icon/icon-twister.svg" alt="" />
+                    <div class="paragraph-text" style="--delay: 1.2s">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Ad consequatur aspernatur dolorem earum natus voluptatum
+                      eveniet quibusdam deserunt quam ipsa minus repellat
+                      commodi dolorum porro, sequi iure at enim dolor ullam
+                      iusto animi eum quasi sit debitis! Officia laboriosam
+                      beatae velit adipisci quis itaque, veniam recusandae,
+                      exercitationem voluptate perspiciatis sunt.
                     </div>
-                  </div>
-                </div>
-                <div class="paragraph col-lg-8 col-12">
-                  <div class="paragraph-name" style="--delay: 0.6s">
-                    John Wick
-                  </div>
-                  <div class="paragraph-sub" style="--delay: 0.9s">
-                    Teacher Ielts Foundation
-                  </div>
-                  <div class="paragraph-text" style="--delay: 1.2s">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Ad consequatur aspernatur dolorem earum natus voluptatum
-                    eveniet quibusdam deserunt quam ipsa minus repellat
-                    commodi dolorum porro, sequi iure at enim dolor ullam
-                    iusto animi eum quasi sit debitis! Officia laboriosam
-                    beatae velit adipisci quis itaque, veniam recusandae,
-                    exercitationem voluptate perspiciatis sunt.
-                  </div>
-                  <div class="social" style="--delay: 1.5s">
-                    <div class="icon">
-                      <img src="assets/icon/icon-fb.svg" alt="" />
-                    </div>
-                    <div class="icon">
-                      <img src="assets/icon/icon-ins.svg" alt="" />
-                    </div>
-                    <div class="icon">
-                      <img src="assets/icon/icon-twister.svg" alt="" />
+                    <div class="social" style="--delay: 1.5s">
+                      <div class="icon">
+                        <img src="assets/icon/icon-fb.svg" alt="" />
+                      </div>
+                      <div class="icon">
+                        <img src="assets/icon/icon-ins.svg" alt="" />
+                      </div>
+                      <div class="icon">
+                        <img src="assets/icon/icon-twister.svg" alt="" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -473,256 +537,340 @@
                     <div class="icon">
                       <img src="assets/icon/icon-fb.svg" alt="" />
                     </div>
+                    <div class="paragraph-sub" style="--delay: 0.9s">
+                      Teacher Ielts Foundation
+                    </div>
+                    <div class="paragraph-text" style="--delay: 1.2s">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Ad consequatur aspernatur dolorem earum natus voluptatum
+                      eveniet quibusdam deserunt quam ipsa minus repellat
+                      commodi dolorum porro, sequi iure at enim dolor ullam
+                      iusto animi eum quasi sit debitis! Officia laboriosam
+                      beatae velit adipisci quis itaque, veniam recusandae,
+                      exercitationem voluptate perspiciatis sunt.
+                    </div>
+                    <div class="social" style="--delay: 1.5s">
+                      <div class="icon">
+                        <img src="assets/icon/icon-fb.svg" alt="" />
+                      </div>
+                      <div class="icon">
+                        <img src="assets/icon/icon-ins.svg" alt="" />
+                      </div>
+                      <div class="icon">
+                        <img src="assets/icon/icon-twister.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="paragraph col-lg-8 col-12">
+                  <div class="paragraph-name" style="--delay: 0.6s">
+                    John Wick
+                  </div>
+                  <div class="paragraph-sub" style="--delay: 0.9s">
+                    Teacher Ielts Foundation
+                  </div>
+                  <div class="paragraph-text" style="--delay: 1.2s">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Ad consequatur aspernatur dolorem earum natus voluptatum
+                    eveniet quibusdam deserunt quam ipsa minus repellat
+                    commodi dolorum porro, sequi iure at enim dolor ullam
+                    iusto animi eum quasi sit debitis! Officia laboriosam
+                    beatae velit adipisci quis itaque, veniam recusandae,
+                    exercitationem voluptate perspiciatis sunt.
+                  </div>
+                  <div class="social" style="--delay: 1.5s">
                     <div class="icon">
-                      <img src="assets/icon/icon-ins.svg" alt="" />
+                      <img src="assets/icon/icon-fb.svg" alt="" />
                     </div>
-                    <div class="icon">
-                      <img src="assets/icon/icon-twister.svg" alt="" />
+                    <div class="paragraph-text" style="--delay: 1.2s">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Ad consequatur aspernatur dolorem earum natus voluptatum
+                      eveniet quibusdam deserunt quam ipsa minus repellat
+                      commodi dolorum porro, sequi iure at enim dolor ullam
+                      iusto animi eum quasi sit debitis! Officia laboriosam
+                      beatae velit adipisci quis itaque, veniam recusandae,
+                      exercitationem voluptate perspiciatis sunt.
+                    </div>
+                    <div class="social" style="--delay: 1.5s">
+                      <div class="icon">
+                        <img src="assets/icon/icon-fb.svg" alt="" />
+                      </div>
+                      <div class="icon">
+                        <img src="assets/icon/icon-ins.svg" alt="" />
+                      </div>
+                      <div class="icon">
+                        <img src="assets/icon/icon-twister.svg" alt="" />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section id="feedback" class="feedback">
-          <div class="feedback__backgroundOrange"></div>
-          <div class="container">
-            <div class="feedback__title">
-              <div class="title-sub">Student</div>
-              <div class="feedback__title_label title">Feedback</div>
-            </div>
-            <div class="feedback__content">
-              <div class="feedback__content_list">
-                <div class="feedback__content_list-item">
-                  <div class="feedback__content_list-item--avatarName">
-                    <div class="avatar">
-                      <img src="img/avatar.jpg" alt="avatar" />
+          </section>
+          <section id="feedback" class="feedback">
+            <div class="feedback__backgroundOrange"></div>
+            <div class="container">
+              <div class="feedback__title">
+                <div class="title-sub">Student</div>
+                <div class="feedback__title_label title">Feedback</div>
+              </div>
+              <div class="feedback__content">
+                <div class="feedback__content_list">
+                  <div class="feedback__content_list-item">
+                    <div class="feedback__content_list-item--avatarName">
+                      <div class="avatar">
+                        <img src="img/avatar.jpg" alt="avatar" />
+                      </div>
+                      <div class="name">Linh Duy Linh</div>
                     </div>
-                    <div class="name">Linh Duy Linh</div>
-                  </div>
-                  <div class="feedback__content_list-item--rating">
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                  </div>
-                  <div class="feedback__content_list-item--text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Tellus cursus egestas nunc eros sagittis elit ut sagittis
-                    mattis. Diam urna accumsan, neque blandit.
-                  </div>
-                  <div class="feedback__content_list-item--day">
-                    20/09/2000
-                  </div>
-                </div>
-                <div class="feedback__content_list-item">
-                  <div class="feedback__content_list-item--avatarName">
-                    <div class="avatar">
-                      <img src="img/avatar.jpg" alt="avatar" />
+                    <div class="feedback__content_list-item--rating">
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
                     </div>
-                    <div class="name">Linh Duy Linh</div>
-                  </div>
-                  <div class="feedback__content_list-item--rating">
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                  </div>
-                  <div class="feedback__content_list-item--text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Tellus cursus egestas nunc eros sagittis elit ut sagittis
-                    mattis. Diam urna accumsan, neque blandit.
-                  </div>
-                  <div class="feedback__content_list-item--day">
-                    20/09/2000
-                  </div>
-                </div>
-                <div class="feedback__content_list-item">
-                  <div class="feedback__content_list-item--avatarName">
-                    <div class="avatar">
-                      <img src="img/avatar.jpg" alt="avatar" />
+                    <div class="feedback__content_list-item--text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Tellus cursus egestas nunc eros sagittis elit ut sagittis
+                      mattis. Diam urna accumsan, neque blandit.
                     </div>
-                    <div class="name">Linh Duy Linh</div>
-                  </div>
-                  <div class="feedback__content_list-item--rating">
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                  </div>
-                  <div class="feedback__content_list-item--text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Tellus cursus egestas nunc eros sagittis elit ut sagittis
-                    mattis. Diam urna accumsan, neque blandit.
-                  </div>
-                  <div class="feedback__content_list-item--day">
-                    20/09/2000
-                  </div>
-                </div>
-                <div class="feedback__content_list-item">
-                  <div class="feedback__content_list-item--avatarName">
-                    <div class="avatar">
-                      <img src="img/avatar.jpg" alt="avatar" />
+                    <div class="feedback__content_list-item--day">
+                      20/09/2000
                     </div>
-                    <div class="name">Linh Duy Linh</div>
                   </div>
-                  <div class="feedback__content_list-item--rating">
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                  </div>
-                  <div class="feedback__content_list-item--text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Tellus cursus egestas nunc eros sagittis elit ut sagittis
-                    mattis. Diam urna accumsan, neque blandit.
-                  </div>
-                  <div class="feedback__content_list-item--day">
-                    20/09/2000
-                  </div>
-                </div>
-                <div class="feedback__content_list-item">
-                  <div class="feedback__content_list-item--avatarName">
-                    <div class="avatar">
-                      <img src="img/avatar.jpg" alt="avatar" />
+                  <div class="feedback__content_list-item">
+                    <div class="feedback__content_list-item--avatarName">
+                      <div class="avatar">
+                        <img src="img/avatar.jpg" alt="avatar" />
+                      </div>
+                      <div class="name">Linh Duy Linh</div>
                     </div>
-                    <div class="name">Linh Duy Linh</div>
+                    <div class="feedback__content_list-item--rating">
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                    </div>
+                    <div class="feedback__content_list-item--text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Tellus cursus egestas nunc eros sagittis elit ut sagittis
+                      mattis. Diam urna accumsan, neque blandit.
+                    </div>
+                    <div class="feedback__content_list-item--day">
+                      20/09/2000
+                    </div>
                   </div>
-                  <div class="feedback__content_list-item--rating">
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
-                    <img src="img/icon-star.svg" alt="icon-star" />
+                  <div class="feedback__content_list-item">
+                    <div class="feedback__content_list-item--avatarName">
+                      <div class="avatar">
+                        <img src="img/avatar.jpg" alt="avatar" />
+                      </div>
+                      <div class="name">Linh Duy Linh</div>
+                    </div>
+                    <div class="feedback__content_list-item--rating">
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                    </div>
+                    <div class="feedback__content_list-item--text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Tellus cursus egestas nunc eros sagittis elit ut sagittis
+                      mattis. Diam urna accumsan, neque blandit.
+                    </div>
+                    <div class="feedback__content_list-item--day">
+                      20/09/2000
+                    </div>
                   </div>
-                  <div class="feedback__content_list-item--text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Tellus cursus egestas nunc eros sagittis elit ut sagittis
-                    mattis. Diam urna accumsan, neque blandit.
+                  <div class="feedback__content_list-item">
+                    <div class="feedback__content_list-item--avatarName">
+                      <div class="avatar">
+                        <img src="img/avatar.jpg" alt="avatar" />
+                      </div>
+                      <div class="name">Linh Duy Linh</div>
+                    </div>
+                    <div class="feedback__content_list-item--rating">
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                    </div>
+                    <div class="feedback__content_list-item--text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Tellus cursus egestas nunc eros sagittis elit ut sagittis
+                      mattis. Diam urna accumsan, neque blandit.
+                    </div>
+                    <div class="feedback__content_list-item--day">
+                      20/09/2000
+                    </div>
                   </div>
-                  <div class="feedback__content_list-item--day">
-                    20/09/2000
+                  <div class="feedback__content_list-item">
+                    <div class="feedback__content_list-item--avatarName">
+                      <div class="avatar">
+                        <img src="img/avatar.jpg" alt="avatar" />
+                      </div>
+                      <div class="name">Linh Duy Linh</div>
+                    </div>
+                    <div class="feedback__content_list-item--rating">
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                      <img src="img/icon-star.svg" alt="icon-star" />
+                    </div>
+                    <div class="feedback__content_list-item--text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Tellus cursus egestas nunc eros sagittis elit ut sagittis
+                      mattis. Diam urna accumsan, neque blandit.
+                    </div>
+                    <div class="feedback__content_list-item--day">
+                      20/09/2000
+                    </div>
                   </div>
+                </div>
+              </div>
+              <div style="width: 10%"></div>
+              <div class="feedback__control">
+                <div class="feedback__control_prev">
+                  <img src="img/icon-left-feedback.svg" alt="arrow-left" />
+                </div>
+                <div class="feedback__control_next">
+                  <img src="img/icon-right-feedback.svg" alt="arrow-right" />
                 </div>
               </div>
             </div>
-            <div style="width: 10%">
+          </section>
+          <section id="family" class="family">
+            <div class="container family__title">We are family</div>
+            <div class="family__img">
+              <div class="family__img_list" itemscope data-pswp-uid="1">
+                <figure class="family__img_list-item">
+                  <a href="img/family_one.jpg" data-size="800x500">
+                    <img src="img/family_one.jpg" alt="gallery-img" />
+                  </a>
+                  <div class="family__img_list-item--opacity"></div>
+                  <div
+                    class="family__img_list-item--content"
+                    style="--delay: 0.4s"
+                  >
+                    <div class="name" style="--delay: 0.7s">
+                      Camping <br />
+                      Summer 2022
+                    </div>
+                    <div class="button" style="--delay: 1s">View more</div>
+                  </div>
+                </figure>
+                <figure class="family__img_list-item">
+                  <a href="img/family_two.jpg" data-size="800x500">
+                    <img src="img/family_two.jpg" alt="gallery-img" />
+                  </a>
+                  <div class="family__img_list-item--opacity"></div>
+                  <div
+                    class="family__img_list-item--content"
+                    style="--delay: 0.4s"
+                  >
+                    <div class="name" style="--delay: 0.7s">
+                      Camping <br />
+                      Summer 2022
+                    </div>
+                    <div class="button" style="--delay: 1s">View more</div>
+                  </div>
+                </figure>
+                <figure class="family__img_list-item">
+                  <a href="img/family_three.jpg" data-size="800x500">
+                    <img src="img/family_three.jpg" alt="gallery-img" />
+                  </a>
+                  <div class="family__img_list-item--opacity"></div>
+                  <div
+                    class="family__img_list-item--content"
+                    style="--delay: 0.4s"
+                  >
+                    <div class="name" style="--delay: 0.7s">
+                      Camping <br />
+                      Summer 2022
+                    </div>
+                    <div class="button" style="--delay: 1s">View more</div>
+                  </div>
+                </figure>
+                <figure class="family__img_list-item">
+                  <a href="img/family_four.jpg" data-size="800x500">
+                    <img src="img/family_four.jpg" alt="gallery-img" />
+                  </a>
+                  <div class="family__img_list-item--opacity"></div>
+                  <div
+                    class="family__img_list-item--content"
+                    style="--delay: 0.4s"
+                  >
+                    <div class="name" style="--delay: 0.7s">
+                      Camping <br />
+                      Summer 2022
+                    </div>
+                    <div class="button" style="--delay: 1s">View more</div>
+                  </div>
+                </figure>
+                <figure class="family__img_list-item">
+                  <a href="img/family_five.jpg" data-size="800x500">
+                    <img src="img/family_five.jpg" alt="gallery-img" />
+                  </a>
+                  <div class="family__img_list-item--opacity"></div>
+                  <div
+                    class="family__img_list-item--content"
+                    style="--delay: 0.4s"
+                  >
+                    <div class="name" style="--delay: 0.7s">
+                      Camping <br />
+                      Summer 2022
+                    </div>
+                    <div class="button" style="--delay: 1s">View more</div>
+                  </div>
+                </figure>
+              </div>
             </div>
-            <div class="feedback__control">
-              <div class="feedback__control_prev">
-                <img src="img/icon-left-feedback.svg" alt="arrow-left" />
+          </section>
+          <section id="contact" class="contact left-to-right">
+            <div class="container contact__title">Contact</div>
+            <div class="container contact__content">
+              <div class="contact__content_form">
+                <div class="contact__content_form-item">
+                  <input type="text" placeholder="Name" />
+                  <!-- <label>Name</label> -->
+                </div>
+                <div class="contact__content_form-item">
+                  <input type="tel" placeholder="Phone" />
+                  <!-- <label>Phone</label> -->
+                </div>
+                <div class="contact__content_form-item">
+                  <input type="email" placeholder="Email" />
+                  <!-- <label>Email</label> -->
+                </div>
+                <div class="contact__content_form-item">
+                  <input type="text" placeholder="Address" />
+                  <!-- <label>Address</label> -->
+                </div>
+                <div class="contact__content_form-item">
+                  <textarea placeholder="Note"></textarea>
+                  <!-- <label>Note</label> -->
+                </div>
+                <div class="button">Submit</div>
               </div>
-              <div class="feedback__control_next">
-                <img src="img/icon-right-feedback.svg" alt="arrow-right" />
+              <div class="contact__content_img">
+                <img src="img/banner-contact.jpg" alt="background-img" />
               </div>
             </div>
-          </div>
-        </section>
-        <section id="family" class="family">
-          <div class="container family__title">We are family</div>
-          <div class="family__img">
-            <div class="family__img_list" itemscope data-pswp-uid="1">
-              <figure class="family__img_list-item">
-                <a href="img/family_one.jpg" data-size="800x500">
-                  <img src="img/family_one.jpg" alt="gallery-img" />
-                </a>
-                <div class="family__img_list-item--opacity"></div>
-                <div class="family__img_list-item--content" style="--delay: 0.4s">
-                  <div class="name" style="--delay: 0.7s">
-                    Camping <br />
-                    Summer 2022
-                  </div>
-                  <div class="button" style="--delay: 1s">View more</div>
-                </div>
-              </figure>
-              <figure class="family__img_list-item">
-                <a href="img/family_two.jpg" data-size="800x500">
-                  <img src="img/family_two.jpg" alt="gallery-img" />
-                </a>
-                <div class="family__img_list-item--opacity"></div>
-                <div class="family__img_list-item--content" style="--delay: 0.4s">
-                  <div class="name" style="--delay: 0.7s">
-                    Camping <br />
-                    Summer 2022
-                  </div>
-                  <div class="button" style="--delay: 1s">View more</div>
-                </div>
-              </figure>
-              <figure class="family__img_list-item">
-                <a href="img/family_three.jpg" data-size="800x500">
-                  <img src="img/family_three.jpg" alt="gallery-img" />
-                </a>
-                <div class="family__img_list-item--opacity"></div>
-                <div class="family__img_list-item--content" style="--delay: 0.4s">
-                  <div class="name" style="--delay: 0.7s">
-                    Camping <br />
-                    Summer 2022
-                  </div>
-                  <div class="button" style="--delay: 1s">View more</div>
-                </div>
-              </figure>
-              <figure class="family__img_list-item">
-                <a href="img/family_four.jpg" data-size="800x500">
-                  <img src="img/family_four.jpg" alt="gallery-img" />
-                </a>
-                <div class="family__img_list-item--opacity"></div>
-                <div class="family__img_list-item--content" style="--delay: 0.4s">
-                  <div class="name" style="--delay: 0.7s">
-                    Camping <br />
-                    Summer 2022
-                  </div>
-                  <div class="button" style="--delay: 1s">View more</div>
-                </div>
-              </figure>
-              <figure class="family__img_list-item">
-                <a href="img/family_five.jpg" data-size="800x500">
-                  <img src="img/family_five.jpg" alt="gallery-img" />
-                </a>
-                <div class="family__img_list-item--opacity"></div>
-                <div class="family__img_list-item--content" style="--delay: 0.4s">
-                  <div class="name" style="--delay: 0.7s">
-                    Camping <br />
-                    Summer 2022
-                  </div>
-                  <div class="button" style="--delay: 1s">View more</div>
-                </div>
-              </figure>
-            </div>
-          </div>
-        </section>
-        <section id="contact" class="contact left-to-right">
-          <div class="container contact__title">Contact</div>
-          <div class="container contact__content">
-            <div class="contact__content_form">
-              <div class="contact__content_form-item">
-                <input type="text" placeholder="Name" />
-                <!-- <label>Name</label> -->
+            <div style="width: 10%"></div>
+          </section>
+        </div>
+        <div class="shadow"></div>
+        <div class="popup">
+          <div class="popup_content row">
+            <div class="col-md-7">
+              <div class="popup_content-image">
+                <img src="assets/register.jpg" alt="" />
               </div>
-              <div class="contact__content_form-item">
-                <input type="tel" placeholder="Phone" />
-                <!-- <label>Phone</label> -->
-              </div>
-              <div class="contact__content_form-item">
-                <input type="email" placeholder="Email" />
-                <!-- <label>Email</label> -->
-              </div>
-              <div class="contact__content_form-item">
-                <input type="text" placeholder="Address" />
-                <!-- <label>Address</label> -->
-              </div>
-              <div class="contact__content_form-item">
-                <textarea placeholder="Note"></textarea>
-                <!-- <label>Note</label> -->
-              </div>
-              <div class="button">Submit</div>
-            </div>
-            <div class="contact__content_img">
-              <img src="img/banner-contact.jpg" alt="background-img" />
             </div>
           </div>
           <div style="width: 10%"></div>
@@ -780,30 +928,47 @@
           Address: 24, Đặng Thai Mai, Phường 7, Quận Phú Nhuận, Thành phố Hồ
           Chí Minh
         </div>
-        <div class="footer_phone">Phone: 0344.152.125</div>
-        <div class="footer_social">
-          <div class="footer_social-item">
-            <a href="#"><img src="img/icon-facebook.svg" alt="icon-facebook" /></a>
+      </main>
+      <footer>
+        <div class="container footer">
+          <div class="footer_logo">
+            <a href="#">
+              <img src="img/avel-logo.png" alt="avel-logo" />
+            </a>
           </div>
-          <div class="footer_social-item">
-            <a href="#"><img src="img/icon-instagram.svg" alt="icon-facebook" /></a>
+          <div class="footer_address">
+            Address: 24, Đặng Thai Mai, Phường 7, Quận Phú Nhuận, Thành phố Hồ
+            Chí Minh
           </div>
-          <div class="footer_social-item">
-            <a href="#"><img src="img/icon-facebook.svg" alt="icon-facebook" /></a>
+          <div class="footer_phone">Phone: 0344.152.125</div>
+          <div class="footer_social">
+            <div class="footer_social-item">
+              <a href="#"
+                ><img src="img/icon-facebook.svg" alt="icon-facebook"
+              /></a>
+            </div>
+            <div class="footer_social-item">
+              <a href="#"
+                ><img src="img/icon-instagram.svg" alt="icon-facebook"
+              /></a>
+            </div>
+            <div class="footer_social-item">
+              <a href="#"
+                ><img src="img/icon-facebook.svg" alt="icon-facebook"
+              /></a>
+            </div>
+          </div>
+          <div class="footer_back">
+            <div class="footer_back-backTop">
+              <img src="assets/icon/backtop.svg" alt="arrow" />
+              <p>Back to top</p>
+            </div>
           </div>
         </div>
-        <div class="footer_back">
-          <div class="footer_back-backTop">
-            <img src="assets/icon/backtop.svg" alt="arrow" />
-            <p>Back to top</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
+      </footer>
+    </div>
 
-  <script type="text/javascript" src="dest/jsmain.min.js"></script>
-  <script type="text/javascript" src="dest/main-page.js"></script>
-</body>
-
+    <script type="text/javascript" src="dest/jsmain.min.js"></script>
+    <script type="text/javascript" src="dest/main-page.js"></script>
+  </body>
 </html>
