@@ -10,17 +10,17 @@
   @media screen and (max-width: $md-max) {
     @content;
   }
-  section .title-sub {
-    margin-left: 0;
-    &::before {
-      display: none;
-    }
-  }
 }
 // tablet
 @mixin sm {
   @media screen and (max-width: $sm-max) {
     @content;
+    section .title-sub {
+      margin-left: 0;
+      &::before {
+        display: none;
+      }
+    }
   }
 }
 // mobile

@@ -451,7 +451,7 @@
   }
 }
 
-//----------------------------------------------------what do we do & study abroad -------------------------------------
+//---------------------------------------------------- What do we do & study abroad & feedback -------------------------------------
 body {
   .scrolling-box {
     scroll-behavior: smooth;
@@ -718,6 +718,7 @@ body {
         border-radius: 10px;
         font-family: "AV";
         z-index: 10;
+        transition: $t;
         &-name {
           font-size: 35px;
           letter-spacing: 0.03em;
@@ -753,6 +754,7 @@ body {
           // transition-delay: calc(var(--delay));
         }
         &.active--Aboutus {
+          z-index: 11;
           .paragraph-name,
           .paragraph-sub,
           .paragraph-text,
@@ -805,6 +807,7 @@ body {
         overflow: hidden;
         position: relative;
         img {
+          position: absolute;
           width: 100%;
           height: 100%;
           object-fit: cover;
@@ -818,6 +821,37 @@ body {
           bottom: 0;
           background: rgba(0, 0, 0, 0.1);
           z-index: 9;
+        }
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .title {
+          text-align: center;
+          margin-top: 40px;
+          margin-bottom: 40px;
+        }
+        &-content {
+          margin-bottom: 10px;
+          .label {
+            font-family: "AV";
+            font-size: 20px;
+          }
+          input {
+            height: 40px;
+            width: 100%;
+            outline: none;
+            border: none;
+            border-radius: none;
+            cursor: none;
+            box-shadow: none;
+            border-bottom: 1px solid #d3d3d3;
+          }
+        }
+        .button {
+          width: 50%;
+          margin: 30px auto 0;
         }
       }
     }
@@ -844,6 +878,7 @@ body {
     }
   }
 }
+
 @include md {
   body {
     .information .container .row {
@@ -899,6 +934,94 @@ body {
           }
         }
       }
+    }
+    .aboutUs {
+      .container {
+        .content-about {
+          .row {
+            .titleAbout {
+              height: 0px;
+            }
+            .imageAbout {
+              height: calc(100vh - 300px);
+            }
+          }
+          .paragraph {
+            top: 80%;
+            padding: 10px 20px;
+            &-text {
+              font-family: "EB";
+              font-size: 14px;
+              line-height: 20px;
+            }
+            &-name {
+              font-size: 25px;
+            }
+            .social {
+              margin-top: 5px;
+              .icon {
+                width: 30px;
+                height: 30px;
+              }
+            }
+          }
+          .flickity-button {
+            z-index: 15;
+            bottom: 110px;
+          }
+        }
+      }
+    }
+    .popup {
+      &_content {
+        .col-lg-7 {
+          height: 40%;
+          &-image {
+            position: unset;
+          }
+        }
+        .form {
+          padding: 0 20px;
+          .title {
+            font-size: 30px;
+            margin: 20px 0;
+          }
+          &-content {
+            .label {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 819px) and (min-width: 769px) {
+  .aboutUs {
+    .container {
+      .content-about {
+        .row {
+          .titleAbout {
+            height: 0px;
+          }
+          .imageAbout {
+            height: calc(100vh - (90px + 20px)) !important;
+          }
+        }
+        .paragraph {
+          top: 50% !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 820px) and (min-width: 769px) {
+  .aboutUs {
+    .flickity-button {
+      bottom: 170px !important;
+    }
+    .paragraph {
+      padding: 20px !important;
     }
   }
 }
@@ -970,6 +1093,55 @@ body {
       .background-circle {
         right: -556px;
         top: -268px;
+      }
+    }
+    .aboutUs {
+      .container {
+        .content-about {
+          .row {
+            .titleAbout {
+              height: 0px;
+            }
+            .imageAbout {
+              height: calc(100vh - 300px);
+            }
+          }
+          .paragraph {
+            top: 80%;
+          }
+        }
+      }
+    }
+    .popup {
+      height: 90%;
+      &_content {
+        .col-lg-7 {
+          height: 40%;
+          &-image {
+            position: unset;
+          }
+        }
+        .form {
+          padding: 0 15px;
+          .title {
+            font-size: 25px;
+            margin: 10px 0;
+          }
+          &-content {
+            .label {
+              font-size: 14px;
+            }
+            input{
+              height: 30px;
+            }
+          }
+          .button{
+            margin: 10px auto 0;
+            font-size: 14px;
+            height: 40px;
+            padding: 10px;
+          }
+        }
       }
     }
   }
