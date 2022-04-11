@@ -69,7 +69,6 @@
               transform: translateX(0);
               transition-delay: calc(var(--delay)) !important;
               transition: $t;
-              text-align: center;
             }
             .button {
               visibility: visible;
@@ -2050,35 +2049,6 @@ body {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
         transition: $t box-shadow, $t height;
         z-index: 1;
-        .feedback__content_list-item--info {
-          .avatarName {
-            .avatar {
-              width: 70px;
-              height: 70px;
-              transition: $t;
-            }
-            .name {
-              font-size: 30px;
-              transition: $t;
-            }
-          }
-          .rating {
-            img {
-              width: 25px;
-              height: 25px;
-              transition: $t;
-            }
-          }
-          .feedback-text {
-            height: 170px;
-            font-size: 22px;
-            transition: $t;
-          }
-        }
-        .feedback__content_list-item--day {
-          font-size: 22px;
-          transition: $t;
-        }
       }
     }
   }
@@ -2338,5 +2308,13 @@ body {
         }
       }
     }
+  }
+}
+.contact__content_form-item {
+  textarea {
+    cursor: none;
+  }
+  input {
+    cursor: none;
   }
 }
