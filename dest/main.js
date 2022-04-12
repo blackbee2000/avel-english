@@ -1,4 +1,8 @@
 AOS.init();
+//-----------------------------------loading-------------------------------------------------
+setTimeout(function(){
+  $('.loading').addClass('disable-loading');
+},3000)
 //-----------------------------------cursor--------------------------------------------------
 let cursor = document.querySelector(".cursor");
 document.addEventListener("mousemove", (e) => {
