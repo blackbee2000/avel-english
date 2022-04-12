@@ -69,7 +69,6 @@
               transform: translateX(0);
               transition-delay: calc(var(--delay)) !important;
               transition: $t;
-              text-align: center;
             }
             .button {
               visibility: visible;
@@ -371,7 +370,7 @@
         &-left {
           &--item {
             .button {
-              height: 40px;
+              height: 45px;
               padding: 0px 35px;
               display: flex;
               align-items: center;
@@ -939,16 +938,16 @@ body {
       svg {
         width: 30px;
       }
-      &:hover {
-        background-color: transparent;
-        border: 1px solid #ff0e00;
-        transition: $t;
-        svg {
-          path {
-            fill: #ff0e00;
-          }
-        }
-      }
+    //   &:hover {
+    //     background-color: transparent;
+    //     border: 1px solid #ff0e00;
+    //     transition: $t;
+    //     svg {
+    //       path {
+    //         fill: #ff0e00;
+    //       }
+    //     }
+    //   }
     }
     &_next {
       margin-top: 30px;
