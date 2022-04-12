@@ -519,6 +519,10 @@ body {
         }
       }
     }
+  }
+}
+@include sm {
+  body{
     .popup {
       &_content {
         .col-lg-7 {
@@ -678,11 +682,11 @@ body {
             .label {
               font-size: 14px;
             }
-            input{
+            input {
               height: 30px;
             }
           }
-          .button{
+          .button {
             margin: 10px auto 0;
             font-size: 14px;
             height: 40px;
