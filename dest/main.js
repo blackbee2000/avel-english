@@ -1,8 +1,8 @@
 AOS.init();
 //-----------------------------------loading-------------------------------------------------
-setTimeout(function(){
-  $('.loading').addClass('disable-loading');
-},3000)
+setTimeout(function () {
+  $(".loading").addClass("disable-loading");
+}, 3000);
 //-----------------------------------cursor--------------------------------------------------
 let cursor = document.querySelector(".cursor");
 document.addEventListener("mousemove", (e) => {
@@ -11,6 +11,7 @@ document.addEventListener("mousemove", (e) => {
     "top: " + (e.screenY - 95) + "px; left:" + e.screenX + "px;"
   );
 });
+
 function hoverElement() {
   var cursor1 = $(".cursor");
   var logo = $(".logo");
@@ -99,17 +100,15 @@ function hoverElement() {
 }
 hoverElement();
 //----------------------------------Click menu header ---------------------------------------------
-$('.nav-menu-span').on('click', function () {
-  $('.menu-hidden').toggleClass('active-menu-hidden')
-
+$(".nav-menu-span").on("click", function () {
+  $(".menu-hidden").toggleClass("active-menu-hidden");
 });
-$('.menu-hidden ul li a').on('click', function () {
-  $('.menu-hidden').removeClass('active-menu-hidden')
-})
-$('.button-close').on('click', function () {
-  $('.menu-hidden').removeClass('active-menu-hidden')
-
-})
+$(".menu-hidden ul li a").on("click", function () {
+  $(".menu-hidden").removeClass("active-menu-hidden");
+});
+$(".button-close").on("click", function () {
+  $(".menu-hidden").removeClass("active-menu-hidden");
+});
 // -----------------------------------------------------registerbutton-------------------------------------------------------------
 
 $(".registerButton").on("click", function () {
@@ -138,7 +137,7 @@ $(".studySettle .carousel").flickity({
   prevNextButtons: true,
   pageDots: false,
   on: {
-    ready: function (index) { },
+    ready: function (index) {},
     change: function (index) {
       let content = $(".studySettle .content-study .paragraph-text");
       console.log(content);
@@ -155,7 +154,7 @@ $(".aboutUs .carousel").flickity({
   lazyLoad: true,
   pageDots: false,
   on: {
-    ready: function (index) { },
+    ready: function (index) {},
     change: function (index) {
       let aboutContent = $(".aboutUs .content-about .paragraph");
       aboutContent.eq(index).addClass("active--Aboutus");
@@ -232,7 +231,7 @@ window.addEventListener("scroll", function () {
   var heightScroll = document.documentElement.scrollTop;
   var header = $(".header");
   var menu = $("header .container .menu li a");
-  var menuSpan = $('header .nav-menu-span');
+  var menuSpan = $("header .nav-menu-span");
   if (heightScroll > 10) {
     header.addClass("active");
   } else {
@@ -286,7 +285,7 @@ $(".course__item_img").flickity({
   prevNextButtons: false,
   pageDots: false,
   on: {
-    ready: function () { },
+    ready: function () {},
     change: function (index) {
       let contentCourse = $(".course__item_content-item");
       contentCourse.eq(index).addClass("active--Course");
@@ -323,7 +322,7 @@ function scrollToElement() {
     $(this).click(function () {
       if ($(this).text() === "Home") {
         $([document.documentElement, document.body]).animate(
-          { scrollTop: $('.slider').offset().top },
+          { scrollTop: $(".slider").offset().top },
           "5000"
         );
       }
@@ -372,8 +371,8 @@ $(".feedback__content_list").flickity({
   prevNextButtons: false,
   pageDots: false,
   on: {
-    ready: function () { },
-    change: function (index) { },
+    ready: function () {},
+    change: function (index) {},
   },
 });
 
@@ -384,8 +383,6 @@ $(".feedback__control_prev").on("click", function () {
 $(".feedback__control_next").on("click", function () {
   $(".feedback__content_list").flickity("next");
 });
-
-
 
 var initPhotoSwipeFromDOM = function (gallerySelector) {
   var parseThumbnailElements = function (el) {
@@ -533,4 +530,3 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
   }
 };
 initPhotoSwipeFromDOM(".family__img_list");
-
